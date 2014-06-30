@@ -33,7 +33,7 @@
 	"Swap Weapons": "s",
 	"Chat": "Enter",
 	"Run": null,
-	"Toggle Run/Walk": "h",
+	"Toggle Run/Walk": "`",
 	"Stand Still": "Ctrl",
 	"Show Items": "f",
 	"Show Portraits": null,

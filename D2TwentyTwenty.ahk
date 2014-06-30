@@ -9,7 +9,7 @@ Diablo2_Init("CommonKeys.json", SkillWeaponSetJSONFile)
 
 #IfWinActive ahk_class Diablo II
 
-/::Diablo2_SetKeyBindings()
+^!a::Diablo2_SetKeyBindings()
 
 ; Overlay
 ; Assign overlay to Alt+F12. Ctrl+MiddleClick or ExtraButtonOne opens and closes it.
@@ -50,5 +50,5 @@ MButton::RemoteFreezeFire()
 
 #IfWinActive
 
-F11::Suspend
-F12::ExitApp
+^!s::Suspend
+^!x::ExitApp

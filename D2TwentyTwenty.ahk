@@ -24,6 +24,8 @@ return
 RemoteFreezeFire() {
 	Global Diablo2
 	
+	Suspend, On
+	
 	TeleportKey := Diablo2.KeysConfig.Skills[5]
 	; Teleport
 	Send, %TeleportKey%{Click Right}
@@ -44,6 +46,8 @@ RemoteFreezeFire() {
 	
 	; Switch skill to Teleport, so we can get out of there.
 	Send, %TeleportKey%
+	
+	Suspend, Off
 }
 
 MButton::RemoteFreezeFire()

@@ -1,12 +1,10 @@
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-#Warn  ; Enable warnings to assist with detecting common errors.
+; Don't warn; libraries we include have too many errors :|
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory. Necessary for the Diablo2 library to find the Config.json file.
-CoordMode, Mouse, Window
 
-; Initialize
 StringReplace, SkillWeaponSetJSONFile, A_ScriptName, .ahk, Skills.json
-Diablo2_Init("CommonKeys.json", SkillWeaponSetJSONFile)
+Diablo2_Init("CommonKeys.json", SkillWeaponSetJSONFile, "FillPotion.json")
 
 ; Functions
 SteamOverlayOpenTabs() {
@@ -21,15 +19,15 @@ SteamOverlayOpenTabs() {
 		; Change the key press delay for this keystroke. This is crucial to getting this keystroke detected.
 		SetKeyDelay, 0, 100
 		SendEvent, ^t
-		
+
 		; Set delays, which give the overlay time to react. 0 sets the smallest possible delay, which is different than no delay (set by -1).
 		; These only work for SendEvent, which we subsequently use.
 		SetKeyDelay, 0, 0
-		
+
 		; Click in the approximate place for the default positioning of the right side of the URL bar.
 		Click, 690, 90
 		Sleep, 100
-		
+
 		SendEvent, {Raw}%TabUrl%
 		SendEvent, {Enter}
 		Sleep, 100
@@ -40,30 +38,30 @@ SteamOverlayOpenTabs() {
 RemoteFreezeFire() {
 	; Teleport in, frost nova, then set to teleport out
 	Global Diablo2
-	
+
 	Suspend, On
-	
+
 	TeleportKey := Diablo2.KeysConfig.Skills[5]
 	; Teleport
 	Send, %TeleportKey%{Click Right}
 	Sleep, 500
-	
+
 	; Frost Nova
 	Send, % Diablo2.KeysConfig.Skills[6] "{Click Right}"
 	Sleep, 500
-	
+
 	; Fire Wall just above character
 	MouseGetPos, OldMouseX, OldMouseY
 	MouseMove, 400, 270 ; Try to center just above the character
 	Sleep, 100
 	Send, % Diablo2.KeysConfig.Skills[3] "{Click Right}"
-	
+
 	; Return mouse to original position
 	MouseMove, %OldMouseX%, %OldMouseY%
-	
+
 	; Switch skill to Teleport, so we can get out of there.
 	Send, %TeleportKey%
-	
+
 	Suspend, Off
 }
 
@@ -78,11 +76,14 @@ XButton1::
 Send, !{F12}
 return
 
+; The game won't let me assign ` as a key. Just assign to F10 then remap here.
+`::F10
+
 ; Open web browser tabs
 ^!w::SteamOverlayOpenTabs()
 
-; Combat
-MButton::RemoteFreezeFire()
+F7::--Diablo2.FillPotion.FullscreenPotionsPerScreenshot
+F8::++Diablo2.FillPotion.FullscreenPotionsPerScreenshot
 
 #IfWinActive
 

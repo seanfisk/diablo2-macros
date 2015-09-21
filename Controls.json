@@ -28,7 +28,7 @@
 	],
 	"Select Previous Skill": null,
 	"Select Next Skill": null,
-	"Show Belt": null,
+	"Show Belt": "m",
 	"Belt": ["z", "x", "c", "v"],
 	"Swap Weapons": "s",
 	"Chat": "Enter",

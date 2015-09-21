@@ -1,2 +1,8 @@
 # Backup files created by SciTE4AutoHotkey
 *.bak
+
+# Log files
+*Log.txt
+
+# FillPotion bitmaps
+/Images/

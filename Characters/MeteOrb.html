@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js ve-available desktop landscape" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="MeteOrb_files/optout_check" type="text/javascript"></script><script src="MeteOrb_files/75f4858b7a" type="text/javascript"></script><script src="MeteOrb_files/get" type="text/javascript"></script><script src="MeteOrb_files/optout_check" type="text/javascript"></script><script src="MeteOrb_files/nr-632.js"></script><script src="MeteOrb_files/controltag.875fd5b280a77e06def8c74a5a268e2c" async=""></script><script src="MeteOrb_files/controltag" async="" type="text/javascript"></script><script src="MeteOrb_files/gpt.js" type="text/javascript" async=""></script><script src="MeteOrb_files/beacon.js" async=""></script><script src="MeteOrb_files/ga.js" async="" type="text/javascript"></script><script src="MeteOrb_files/load_002.php" async=""></script><script src="MeteOrb_files/load_005.php" async=""></script><script src="MeteOrb_files/load_003.php" async=""></script>
+<meta charset="UTF-8">
+<title>MeteOrb Sorceress by Lethal Weapon - Diablo Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcAUlNACQoAXVVbDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta name="generator" content="MediaWiki 1.23.10">
+<meta name="og:title" content="MeteOrb Sorceress by Lethal Weapon">
+<meta name="og:type" content="website">
+<meta name="og:image" content="http://hydra-media.cursecdn.com/diablo.gamepedia.com/b/bc/Wiki.png">
+<meta name="og:url" content="http://diablo.gamepedia.com/MeteOrb_Sorceress_by_Lethal_Weapon">
+<meta name="og:site_name" content="Diablo Wiki">
+<link rel="ExportRDF" type="application/rdf+xml" title="MeteOrb Sorceress by Lethal Weapon" href="http://diablo.gamepedia.com/index.php?title=Special:ExportRDF/MeteOrb_Sorceress_by_Lethal_Weapon&amp;xmlmime=rdf">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit">
+<link rel="edit" title="Edit" href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit">
+<link rel="apple-touch-icon" href="">
+<link rel="shortcut icon" href="http://hydra-media.cursecdn.com/diablo.gamepedia.com/6/64/Favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://diablo.gamepedia.com/opensearch_desc.php" title="Diablo Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://diablo.gamepedia.com/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Diablo Wiki Atom feed" href="http://diablo.gamepedia.com/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="MeteOrb_files/load.css">
+<!--[if lt IE 10]><link rel="stylesheet" href="http://hydra-media.cursecdn.com/hydra/ie.css" media="screen" /><![endif]--><style>
+.qtip{position:absolute;left:-28000px;top:-28000px;display:none;max-width:280px;min-width:50px;font-size:10.5px;line-height:12px;direction:ltr;box-shadow:none;padding:0}.qtip-content{position:relative;padding:5px 9px;overflow:hidden;text-align:left;word-wrap:break-word}.qtip-titlebar{position:relative;padding:5px 35px 5px 10px;overflow:hidden;border-width:0 0 1px;font-weight:bold}.qtip-titlebar + .qtip-content{border-top-width:0 !important} .qtip-close{position:absolute;right:-9px;top:-9px;z-index:11; cursor:pointer;outline:medium none;border:1px solid transparent}.qtip-titlebar .qtip-close{right:4px;top:50%;margin-top:-9px}* html .qtip-titlebar .qtip-close{top:16px} .qtip-titlebar .ui-icon,.qtip-icon .ui-icon{display:block;text-indent:-1000em;direction:ltr}.qtip-icon,.qtip-icon .ui-icon{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;text-decoration:none}.qtip-icon .ui-icon{width:18px;height:14px;line-height:14px;text-align:center;text-indent:0;font:normal bold 10px/13px Tahoma,sans-serif;color:inherit;background:transparent none no-repeat -100em -100em} .qtip-focus{} .qtip-hover{} .qtip-default{border:1px solid #F1D031;background-color:#FFFFA3;color:#555}.qtip-default .qtip-titlebar{background-color:#FFEF93}.qtip-default .qtip-icon{border-color:#CCC;background:#F1F1F1;color:#777}.qtip-default .qtip-titlebar .qtip-close{border-color:#AAA;color:#111}.qtip-shadow{-webkit-box-shadow:1px 1px 3px 1px rgba(0,0,0,0.15);-moz-box-shadow:1px 1px 3px 1px rgba(0,0,0,0.15);box-shadow:1px 1px 3px 1px rgba(0,0,0,0.15)} .qtip-rounded,.qtip-tipsy,.qtip-bootstrap{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.qtip-rounded .qtip-titlebar{-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0} .qtip-youtube{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 0 3px #333;-moz-box-shadow:0 0 3px #333;box-shadow:0 0 3px #333;color:white;border:0 solid transparent;background:#4A4A4A;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#4A4A4A),color-stop(100%,black));background-image:-webkit-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-moz-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-ms-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-o-linear-gradient(top,#4A4A4A 0,black 100%)}.qtip-youtube .qtip-titlebar{background-color:#4A4A4A;background-color:rgba(0,0,0,0)}.qtip-youtube .qtip-content{padding:.75em;font:12px arial,sans-serif;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#4a4a4a,EndColorStr=#000000);-ms-filter:"progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#4a4a4a,EndColorStr=#000000);"}.qtip-youtube .qtip-icon{border-color:#222}.qtip-youtube .qtip-titlebar .ui-state-hover{border-color:#303030} .qtip-jtools{background:#232323;background:rgba(0,0,0,0.7);background-image:-webkit-gradient(linear,left top,left bottom,from(#717171),to(#232323));background-image:-moz-linear-gradient(top,#717171,#232323);background-image:-webkit-linear-gradient(top,#717171,#232323);background-image:-ms-linear-gradient(top,#717171,#232323);background-image:-o-linear-gradient(top,#717171,#232323);border:2px solid #ddd;border:2px solid rgba(241,241,241,1);-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 0 12px #333;-moz-box-shadow:0 0 12px #333;box-shadow:0 0 12px #333} .qtip-jtools .qtip-titlebar{background-color:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171,endColorstr=#4A4A4A);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171,endColorstr=#4A4A4A)"}.qtip-jtools .qtip-content{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A,endColorstr=#232323);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A,endColorstr=#232323)"}.qtip-jtools .qtip-titlebar,.qtip-jtools .qtip-content{background:transparent;color:white;border:0 dashed transparent}.qtip-jtools .qtip-icon{border-color:#555}.qtip-jtools .qtip-titlebar .ui-state-hover{border-color:#333} .qtip-cluetip{-webkit-box-shadow:4px 4px 5px rgba(0,0,0,0.4);-moz-box-shadow:4px 4px 5px rgba(0,0,0,0.4);box-shadow:4px 4px 5px rgba(0,0,0,0.4);background-color:#D9D9C2;color:#111;border:0 dashed transparent}.qtip-cluetip .qtip-titlebar{background-color:#87876A;color:white;border:0 dashed transparent}.qtip-cluetip .qtip-icon{border-color:#808064}.qtip-cluetip .qtip-titlebar .ui-state-hover{border-color:#696952;color:#696952} .qtip-tipsy{background:black;background:rgba(0,0,0,.87);color:white;border:0 solid transparent;font-size:11px;font-family:'Lucida Grande',sans-serif;font-weight:bold;line-height:16px;text-shadow:0 1px black}.qtip-tipsy .qtip-titlebar{padding:6px 35px 0 10px;background-color:transparent}.qtip-tipsy .qtip-content{padding:6px 10px}.qtip-tipsy .qtip-icon{border-color:#222;text-shadow:none}.qtip-tipsy .qtip-titlebar .ui-state-hover{border-color:#303030} .qtip-tipped{border:3px solid #959FA9;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-color:#F9F9F9;color:#454545;font-weight:normal;font-family:serif}.qtip-tipped .qtip-titlebar{border-bottom-width:0;color:white;background:#3A79B8;background-image:-webkit-gradient(linear,left top,left bottom,from(#3A79B8),to(#2E629D));background-image:-webkit-linear-gradient(top,#3A79B8,#2E629D);background-image:-moz-linear-gradient(top,#3A79B8,#2E629D);background-image:-ms-linear-gradient(top,#3A79B8,#2E629D);background-image:-o-linear-gradient(top,#3A79B8,#2E629D);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8,endColorstr=#2E629D);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8,endColorstr=#2E629D)"}.qtip-tipped .qtip-icon{border:2px solid #285589;background:#285589}.qtip-tipped .qtip-icon .ui-icon{background-color:#FBFBFB;color:#555} .qtip-bootstrap{ font-size:14px;line-height:20px;color:#333333; padding:1px;background-color:#ffffff;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2);-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box}.qtip-bootstrap .qtip-titlebar{ padding:8px 14px;margin:0;font-size:14px;font-weight:normal;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.qtip-bootstrap .qtip-titlebar .qtip-close{ right:11px;top:45%;border-style:none}.qtip-bootstrap .qtip-content{ padding:9px 14px}.qtip-bootstrap .qtip-icon{ background:transparent}.qtip-bootstrap .qtip-icon .ui-icon{ width:auto;height:auto; float:right;font-size:20px;font-weight:bold;line-height:18px;color:#000000;text-shadow:0 1px 0 #ffffff;opacity:0.2;filter:alpha(opacity=20)}.qtip-bootstrap .qtip-icon .ui-icon:hover{ color:#000000;text-decoration:none;cursor:pointer;opacity:0.4;filter:alpha(opacity=40)} .qtip:not(.ie9haxors) div.qtip-content,.qtip:not(.ie9haxors) div.qtip-titlebar{filter:none;-ms-filter:none}.qtip .qtip-tip{margin:0 auto;overflow:hidden;z-index:10} x:-o-prefocus,.qtip .qtip-tip{visibility:hidden}.qtip .qtip-tip,.qtip .qtip-tip .qtip-vml,.qtip .qtip-tip canvas{position:absolute;color:#123456;background:transparent;border:0 dashed transparent}.qtip .qtip-tip canvas{top:0;left:0}.qtip .qtip-tip .qtip-vml{behavior:url("//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/jquery/#default#VML");display:inline-block;visibility:visible}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:d6051b87317ea7ab7de948ec781e428c */
+div.smwtt{color:#000000} span.smwttpersist span.smwttcontent{color:#888888;font-style:italic;font-size:90%} span.smwttinline span.smwttcontent{display:none;speak:none} span.smwtticon{display:none} span.smwttactivepersist{cursor:help;color:#0000C8} span.smwttactiveinline{color:#BB7700;text-decoration:none} img.smwttimg{padding-right:5px;padding-left:4px} .smwttcontent{display:none} .smwtticon{padding:14px 12px 0 0;white-space:nowrap;margin-bottom:-1px} .smwtticon.info{display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABmJLR0QAQACXAOIX6M4XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1woNCAQvupvvrgAAAgpJREFUKBUFwTtME3EAwOHf3f961+vd9Sh9HEVINUrFhAbRmCgGo9FodCFMLhomJ6MmJsbF1Z2ExMHBUQc3BmOigyERB0ElQHgECRYECrRC26OPa3t+nwQAAI7aO/K458yJeK8qOA74dY/1hbWdxZWJsVUoeAAKAImh2NDdR/duD54cdRLRdMQydB84KJaPzufyyx+6Tr+Zej/2jr1vBUHiin3j/pPnwzcvPMv0OKlb/YlAT4cupR1d0lRNNWwrmUhEB+tmSl7/vTktMiNPhy9dvviyM2FYnZEgpRp8WS3htaC/W2du64iWLAUl1RgoY84qiiJdU03TKFR9vv+tIZQGsiTojqg0WrDtwlHVR7PscCDAVaXoEV3KN+hCELUVVBFgNBOkXZd5NVPhoC6TL0J2v8FhnbiCUBtlX2WzInB1jZiuEQ4KfhVgrR7ErUO+UsMlgCwUT6FRW9YU2TdMXbIsjbglmD+EPQ9iYQFo1Go6Xq3c8hveolze2/hY3M6u2IaGHRI4JpxthyRVHAPCIQXbDFLcyi6WcuufhLs2lXMxsy0tkk51tDkdYVU6ZkosbFXxAwF290vN6amfM0uf374oTI5/lQAAYfddP5e58/BBuivel4qF4k0f/uy7u0sbubn5ifHX7srkLNCUAAAAQtFUW/LUQLI9HHGaPv6/Yj63s/pju1LYPAQA+A8p2cUweh5dZAAAAABJRU5ErkJggg==) no-repeat left bottom;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/util/../../images/info.png?2014-12-16T16:26:40Z) no-repeat left bottom!ie}.smwtticon.service{display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABmJLR0QAQACXAOIX6M4XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1woNCAQvupvvrgAAAgpJREFUKBUFwTtME3EAwOHf3f961+vd9Sh9HEVINUrFhAbRmCgGo9FodCFMLhomJ6MmJsbF1Z2ExMHBUQc3BmOigyERB0ElQHgECRYECrRC26OPa3t+nwQAAI7aO/K458yJeK8qOA74dY/1hbWdxZWJsVUoeAAKAImh2NDdR/duD54cdRLRdMQydB84KJaPzufyyx+6Tr+Zej/2jr1vBUHiin3j/pPnwzcvPMv0OKlb/YlAT4cupR1d0lRNNWwrmUhEB+tmSl7/vTktMiNPhy9dvviyM2FYnZEgpRp8WS3htaC/W2du64iWLAUl1RgoY84qiiJdU03TKFR9vv+tIZQGsiTojqg0WrDtwlHVR7PscCDAVaXoEV3KN+hCELUVVBFgNBOkXZd5NVPhoC6TL0J2v8FhnbiCUBtlX2WzInB1jZiuEQ4KfhVgrR7ErUO+UsMlgCwUT6FRW9YU2TdMXbIsjbglmD+EPQ9iYQFo1Go6Xq3c8hveolze2/hY3M6u2IaGHRI4JpxthyRVHAPCIQXbDFLcyi6WcuufhLs2lXMxsy0tkk51tDkdYVU6ZkosbFXxAwF290vN6amfM0uf374oTI5/lQAAYfddP5e58/BBuivel4qF4k0f/uy7u0sbubn5ifHX7srkLNCUAAAAQtFUW/LUQLI9HHGaPv6/Yj63s/pju1LYPAQA+A8p2cUweh5dZAAAAABJRU5ErkJggg==) no-repeat left bottom;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/util/../../images/info.png?2014-12-16T16:26:40Z) no-repeat left bottom!ie}.smwtticon.warning{display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZ1JREFUKFOVy79rE3EcxvH39+7y8/q9pF4S0xi0mEiaMxV68Yxg8PeiVyhV6iCIQhErHUScFJxcHAX/Azf/AgWXWlsUhyrYioMiqKgoiEgrJTH3cSuldvE9Pg8vkw3Nt6lfHuZ68g9fnv/k2/pPRDDWD098bD1gTO4cdS+NNowp38ZhQ2tgZgQSWo3kDgyPpU/esSuHd4fnK6o1lERtCuIp0tmGO73sHavevf8B8Y7uaDT7pwMXvSmwEkbgNHeFb1eLPH22wNJKnka7enxAG+1/wKxPpq+SuuaeOKSzuSQxq0vGjZML99vj+xJXDmoKa2DOx0znOVUcL7fNrXl8v0OtZhIEv1GFFLUJt3XW43TRJAZgGBal/lbsjN0sZeENIkuEoQUsAq/RQcZpHjEnzpUpA/DqAld/zOjVqOdJFO2RuXlPhuo5efBwUKJou0S9gvx6HO/cG+OmiGD1FdSU3tZNyNdPAFQd4cbFHvUty8jnCOhhl6JYfZBJ4JY1+1IeObc770S6ChClQCvhxaKwEAEISqE+vuf7XkCJCP/TX7cEexPi9whUAAAAAElFTkSuQmCC) no-repeat left bottom;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/util/../../images/warning.png?2014-12-16T16:26:40Z) no-repeat left bottom!ie}.smwtticon.note{display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgtJREFUeNokUctqU1EUXefk5iY3D2MrSWOamyq9jYO2BovUR41O1Iykov6Bc6WDDh36A4oKnYkORZBCoA6KI1GrEKhoFWOo1qhJk6Z539c57sTB5gzOWns9NpMA3KCK0s0TsHwiBsW3qPi0OYerbmP89IaVnFvtMn/dmEginU5DITyYLSA4y40embp3MDWVVoNhgKvot1sob699/OqdvM0MY32AVTrZWZhhfnEsk85HEikOxoERnbYwBLxeGNH4jK/wdq1W1Bd7h8fySnlei4WT0ZV4ROWivQt4A+AzV0DrIV8/AtQA9Onjyt7G6spmOJHhb6IXrkbCnqOyuw+YNL0aTRPSpOnVidgE7A70Q/7x+pf315Wgph1TpAVBOcApktUBnN7/t9/AoBT6REAl8f3dBcW07R1pdSGkSvaJIBzIWpHUWkRqDrNAWENFIWJBZafWKZgjbWghDZIRgUK7Hx4PugNzXSK1wZmLVq0CO5ot8kw2Vyg70U+M/Eu7D0lWPLm78GSXKEOD7JlAu4rvTVWwmPGc/frzF63S5kIgv7SeOGCp0usHUmfAhAtW3SIdga2ffZTnl++nZk/dYlJKkDBePXtyOfb56cO4W5rUWH9YQEcEsI2U+9u48WD63KVlY0K3hpeWjgMxqr+snr9zslL5do3t/ThLnYXsUKLIY8YLj22+Y441gOKfAAMAeeDgUIIDAXwAAAAASUVORK5CYII=) no-repeat left bottom;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/util/../../images/note.png?2014-12-16T16:26:40Z) no-repeat left bottom!ie}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:667297522e3e5ca88bf09984f20d0a5b */
+span.smwbuiltin,span.smwttactiveinline span.smwbuiltin{font-style:italic} div.smwpre{font-family:monospace;padding:1em;border:1px dashed #2f6fab;color:black;background-color:#f9f9f9;line-height:1.1em;margin-bottom:0.5em;margin-top:0.5em;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;word-break:break-word;margin-right:5px} #smwfootbr{clear:both} span.smwsortkey{display:none} a.sortheader:hover{text-decoration:none} div.smwtimeline{border:1px solid #AAAAAA;background-color:#F9F9F9;  }span.smwtlevent,span.smwtlband,span.smwtlsize,span.smwtlposition{display:none;speak:none}span.smwtlcomment{font-style:italic;padding:5px} div.smwfact{clear:both;background-color:#F9F9F9;padding:5px;margin-top:1em;border:1px solid #AAAAAA;font-size:95%;min-height:23px; }div.smwfact td,div.smwfact tr,div.smwfact table{background-color:#F9F9F9}.smwfactboxhead{font-size:110%;font-weight:bold;float:left;margin-bottom:2px;max-width:90%}table.smwfacttable{border-top:1px dotted #AAAAAA;width:100%;clear:both}td.smwpropname,th.smwpropname,td.smwspecname{text-align:right;vertical-align:top;padding-right:1em}td.smwprops,td.smwspecs{vertical-align:top;width:75%}div.smwhr hr{background-color:#DDDDDD;color:#DDDDDD} span.smwwarning{color:#888888;font-style:italic;font-size:90%} span.smwsearchicon{padding-right:16px;margin-right:2px;color:#888888;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAABC1BMVEU+S114jayTpb6Im7eMn7qhsceBlbOYqcKXp8GDl7N2i6rJ0uCYqcJogKB9kq+KnLipt81qgKF8kK9qgKF4jayntstheJpsgqOSo75RaIxWbpCIm7fAy9tlfJ5keptedZdHXX5bcpWBlbOersajssmVp79lfJ5thKN2i6phd5lTa45GW3lPZ4plfJ5le5xRaYxbcpV3jKt2i6pWbpBKYoVOZolSao2HmrZ4jaxTa45JYYRJYYSHmrZedZdFWnhTa45ieZtVbZCzv9Lm6/Ha4Onp7fKks8rb4uvf5e3h5u7X3um2wtXQ2OTAy9vW3efl6fCmtcrJ0uDGz96jssm5xdaruc6uu8+9yNnt8PXd7KeZAAAAQnRSTlMACfbevtlP8sRPTv2lFfRF2Cz1A7jZLdG4HFbm/q8vBAxjxO/syrHaxk0EByM4NyUrutRNBAI6xeJdADjU4QFO3NoNTLabAAAAeElEQVQIHQXBvQ7BUACA0e+7P020EQsDC4NBYrZJ38BTewcmg8XGomnjRso50QlUuSkA1p9TenF2+oRUH7/DzMoChJJH3n2bEpDS0CS7kAVCntd9txhjBFzp7he86h03qqp6kb2qbm8qABy06Y0A8FjHcTkIANCqf7L2G5qa4UzTAAAAAElFTkSuQmCC) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/searchgray_iconsmall.png?2014-12-16T16:26:40Z) center right no-repeat!ie}#bodyContent span.smwsearch a{padding-right:14px;margin-right:2px;color:#888888;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAABC1BMVEU+S114jayTpb6Im7eMn7qhsceBlbOYqcKXp8GDl7N2i6rJ0uCYqcJogKB9kq+KnLipt81qgKF8kK9qgKF4jayntstheJpsgqOSo75RaIxWbpCIm7fAy9tlfJ5keptedZdHXX5bcpWBlbOersajssmVp79lfJ5thKN2i6phd5lTa45GW3lPZ4plfJ5le5xRaYxbcpV3jKt2i6pWbpBKYoVOZolSao2HmrZ4jaxTa45JYYRJYYSHmrZedZdFWnhTa45ieZtVbZCzv9Lm6/Ha4Onp7fKks8rb4uvf5e3h5u7X3um2wtXQ2OTAy9vW3efl6fCmtcrJ0uDGz96jssm5xdaruc6uu8+9yNnt8PXd7KeZAAAAQnRSTlMACfbevtlP8sRPTv2lFfRF2Cz1A7jZLdG4HFbm/q8vBAxjxO/syrHaxk0EByM4NyUrutRNBAI6xeJdADjU4QFO3NoNTLabAAAAeElEQVQIHQXBvQ7BUACA0e+7P020EQsDC4NBYrZJ38BTewcmg8XGomnjRso50QlUuSkA1p9TenF2+oRUH7/DzMoChJJH3n2bEpDS0CS7kAVCntd9txhjBFzp7he86h03qqp6kb2qbm8qABy06Y0A8FjHcTkIANCqf7L2G5qa4UzTAAAAAElFTkSuQmCC) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/searchgray_iconsmall.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:10px 10px}#bodyContent span.smwsearch a:hover{text-decoration:none;color:#0000FF;padding-right:16px;margin-right:0px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALySURBVDgRlcFraNVlHMDx7+95nv/zP+d/LnObeVtz2uyCrRUVDAIHMbIXltUgKRYR7kWvupjYDSEkgkgoKCiJfGeRzqw0CvYuahBWyrZWuWihuWNrZ+e2c87OZf//U1DB8EXU52P27XuV9takiiVS95ZjV+xdjK3uxbO0sFi15ewnlBYO1pZqP9YbTZQSLmeUOF1eNs+fj219QXdt1i2rfXwPlpxKho3qbpme3B7+/N2wUoyKCJcz9VB2ZFfdcKDtxh7p3hiRiMFSDfKFJjadwF/fd+V8pfhmYXK83ynJgLCSKanU47Et18qmDsc1axXtAlPzEekOS7XhSK3SmNt6uuemJnc2K5VDog0rmaptvWXtmgRBLKJNBL/h8DyhPRBqScGKI31dB2c8c2exsHhIW8tKZtmm/MBGFIohZ2oRQaDYkFYECgLAOjBa0ajVk8VSGc+3rGSa+Us18XQ8bIREgSKIC74G5aAdsEAjjCgXioXSYgVTX0bE8Q+zMD0xVs2V7tKtCepNiJRQB1JAClgjwskvvuXCzOypWn2ZeLiEA5wD58DkZs69fO7UyYGBPQ/FYxoi51D8JRBhNl/i05FRWlpaLtzReZbOxiSzRcNcCXIVMErL2E+fffSYNe61/t33pUxbEgeIwOmpGY6/fQxj4mzrTe/vyUz0zzflLU/CeSOgcRhRiqhZPzx+/OjEr998tXdDd2dfPBHT1flc4eL0Lyc6OzeeXt9WHu52Xw5etTk9UP0+f2szsg87XMEhGP4kWiNEXxczmQfERQSpBIXMHKVcka1XO/QP76/rvr9rsOf2IezIu3f/PpY/8lvRewTIGv4mImjPw/MtnvXwYhbtB9jqefzKxaMfj+R74+u6nrh+1xDN8MiO7Gj+8ELZDhv+lcOJRhtTuZRt7Hn9xQ/do88MPnnz0BAPyns73ziRf8fwH/lWu9mF5acPHvggevalXU+137QN9fn4PYb/wfN0M1cKn3tl/7FNbVt6tk9L39k/AH8KLAsrDQkDAAAAAElFTkSuQmCC) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/search_icon.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:13px 13px}#bodyContent span.swmfactboxheadbrowse a{padding-right:16px;margin-right:2px;color:#000000;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAA5FBMVEUAAADb3uv///+gqcBJYqGTmq24v9KJkamboLBtfqOnrbuSmqyqr7yVnK3o6e3n6OrKzdaWna7O0NWMlKiQl6qWm6yRma3DxczEyM+Olqyeo7J+iaamq7qZoLGMlKrg4eiYobqFjqfBxMyQl6hXbaGXnK+hprmcobPEx9BZbaGkqriIkayjp7d1g6iztsSytsZzf6GcobSaobjq6++Umq5abZ6aoLJre6NqeqJ7hqfg4umvtsp0g6h9iaff4el3hKVld6aUoL6wt8meo7SXnbCUm66Jkqnq6+64usRfcqOxs8Dm5+teFG05AAAAAXRSTlMAQObYZgAAAH9JREFUeF4dymMSRDEABOGZ5HFt27Zt3v8+m833r6saSqDl6aSC0ELhXN7r80egVBYZRmOMJ5LAIV0lsy55LRRRKlNYbs0SrDfQpBCybUgh2EXvH4aOPgZDtRkjtY0nmM7m5HtJrtYbYLvb07Z5PJ2hXMybad4fEtrz5TifL4AfAxMLmJTt7hwAAAAASUVORK5CYII=) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/browse_iconsmall.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:13px 13px}#bodyContent span.swmfactboxheadbrowse a:hover{text-decoration:none;color:#0000FF;padding-right:18px;margin-right:0px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA81BMVEUAAADByOQOLn7///8BInfg5O2xuthsf7ODk8CmqbEnQ4slQYoYNYJqea6BhZaSlJ9kbo5fc6xld62/v8Fnea6BhZdbb6lKY6axsrWIjJe/wMQ6UZOCkMVoeq6Gk79BWZpBWJqCkr4uSo8mRI8PLnqio6plcppIXp+LjprFxsgmQYMrRo4nRJI6TX+ytLyKl8xseah7ir9cbqUDJXeJl8xWbLBue6xPZaeYm6V+hqCLl841S34MLXwsSZJVaasSMYBcaYZUZphLYqBsfrFKYaB3iLcwS5EvSpFjeK1neq4zTpE2ToxQaKlSXoIMKW9idKyur7PDoCJEAAAAAXRSTlMAQObYZgAAAJtJREFUGFdlT8USg1AQ292HQ93d3d3dvf//NYWBHhhyS2ZiAAYCnpC7GoU/al5XsjPs9V9fk8tEPn8q+AlH6jGDxxMrwnQmm8N8oVjShXLljXhS1ANio9kCaK+7yIQ9aUeB4XgyhdkcGZOWA44kxnC0hZ3OeXHDcSTyurJwCg6LGXom7WKFmrVXRb1Ztcawu20YyI+nbbrznP3+D9crFuL3dLY6AAAAAElFTkSuQmCC) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/browse_icon.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:15px 15px}#bodyContent span.smwbrowse a{padding-right:14px;margin-right:2px;color:#888888;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAA5FBMVEUAAADb3uv///+gqcBJYqGTmq24v9KJkamboLBtfqOnrbuSmqyqr7yVnK3o6e3n6OrKzdaWna7O0NWMlKiQl6qWm6yRma3DxczEyM+Olqyeo7J+iaamq7qZoLGMlKrg4eiYobqFjqfBxMyQl6hXbaGXnK+hprmcobPEx9BZbaGkqriIkayjp7d1g6iztsSytsZzf6GcobSaobjq6++Umq5abZ6aoLJre6NqeqJ7hqfg4umvtsp0g6h9iaff4el3hKVld6aUoL6wt8meo7SXnbCUm66Jkqnq6+64usRfcqOxs8Dm5+teFG05AAAAAXRSTlMAQObYZgAAAH9JREFUeF4dymMSRDEABOGZ5HFt27Zt3v8+m833r6saSqDl6aSC0ELhXN7r80egVBYZRmOMJ5LAIV0lsy55LRRRKlNYbs0SrDfQpBCybUgh2EXvH4aOPgZDtRkjtY0nmM7m5HtJrtYbYLvb07Z5PJ2hXMybad4fEtrz5TifL4AfAxMLmJTt7hwAAAAASUVORK5CYII=) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/browse_iconsmall.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:10px 10px}#bodyContent span.smwbrowse a:hover{text-decoration:none;color:#0000FF;padding-right:16px;margin-right:0px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA81BMVEUAAADByOQOLn7///8BInfg5O2xuthsf7ODk8CmqbEnQ4slQYoYNYJqea6BhZaSlJ9kbo5fc6xld62/v8Fnea6BhZdbb6lKY6axsrWIjJe/wMQ6UZOCkMVoeq6Gk79BWZpBWJqCkr4uSo8mRI8PLnqio6plcppIXp+LjprFxsgmQYMrRo4nRJI6TX+ytLyKl8xseah7ir9cbqUDJXeJl8xWbLBue6xPZaeYm6V+hqCLl841S34MLXwsSZJVaasSMYBcaYZUZphLYqBsfrFKYaB3iLcwS5EvSpFjeK1neq4zTpE2ToxQaKlSXoIMKW9idKyur7PDoCJEAAAAAXRSTlMAQObYZgAAAJtJREFUGFdlT8USg1AQ292HQ93d3d3dvf//NYWBHhhyS2ZiAAYCnpC7GoU/al5XsjPs9V9fk8tEPn8q+AlH6jGDxxMrwnQmm8N8oVjShXLljXhS1ANio9kCaK+7yIQ9aUeB4XgyhdkcGZOWA44kxnC0hZ3OeXHDcSTyurJwCg6LGXom7WKFmrVXRb1Ztcawu20YyI+nbbrznP3+D9crFuL3dLY6AAAAAElFTkSuQmCC) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/browse_icon.png?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:13px 13px}#bodyContent span.smwmap a{padding-right:20px;color:#888888;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANkE3LLaAgAAAzBJREFUOBGlwTtsGwUAgOH/zufHOe9zHBzsJM6DhpRUCWmjCiolKgOiS6VKrWBghSUswEAlJjYGRlQECypQhoIEAqlNuwSiJhSqkJAqbR40pnbjR/w6+x72+Xw+itgqMfF98D8JPCn2thwfDZ9/cXro7LOjfSflgLetpBoP1u9llm7/kbqirn+wyX/pmLz4wvsfXV9PplW30XBcu+m4dtNxrUbTNcyGu7r2sH72jc8/hHmJJwUm3pu79OUvVcO03ZJad1PpirtxL+3e2Uy5v24k3b1EwVWrlltW6+75hS++hgseHvPwjyPv9L72yuyNhddPhTXDIpEqki/p6GaDoOzlsKgjCCJOs4VmWBwd7T+2eDerGwdLqxKPdcltb710cnwgmVHJl3R2EjkkSaTVclG6g9hNh/HhPrySh939Am3BAPPHn7l4tfDuZQ+86RVD8scdbb6wLHvJ5quoWo1sQaOq1ckVdAajCqeOD2M3HBwHDgsGubwp7z3MbYn+8Z6oKAjDK+sJvrm+gVeSmBqP4TgumztZDrIauUONRKpMOqfRdFoUSzXUqondap3wBMJzMURhIRDwismMymC/wpn5CSaPRCiWDXp7giCIfHJllWLZJBLqolypc215i2yxui02/T7d5/PYlWqNnk6ZzZ00uw/yyD4fF85MMTsdY2RAQdOaJA+q5EsmZr2BZdv4vP6qx8nphtw/8qrfHwjrhoUousSjvcT6u7h5a4fFn7fJ5U062/y4Lgz1K+wk8rQQ+HN365IEa7aZ6f4+Mn3uaPJRlopmMRZXiD3dgW40qNUddMnCrNsc5FRUrYZhNUhnD0v1/a9uioBkZVcWq6WD0lg8Qme7TKVqIXqgL9TO2GAIBBerYeP3SeylcgRkmcz24lUwyx4gAM1uvZgkEp898fzkiNinyKzcSVBSTSLhDtqDPsJKO0NRhZCisPLTd3fVxLXPgLwHaAESzYqhZrfVztBQPBobaotGFGYmY4S62wkGZXqVbvb2s+6NHy7fytz/9lPgPpAR+JcE9AIDIE6MHzs9N3/65ZmZqeeeQhCkR+m8/vvab3vLSz8u62rqNvAXkAFqfwOkPI+h92xJFAAAAABJRU5ErkJggg==) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/world.png?2014-12-16T16:26:40Z) center right no-repeat!ie}#bodyContent span.smwmap a:hover{padding-right:20px;color:#0000FF;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANkE3LLaAgAAAzBJREFUOBGlwTtsGwUAgOH/zufHOe9zHBzsJM6DhpRUCWmjCiolKgOiS6VKrWBghSUswEAlJjYGRlQECypQhoIEAqlNuwSiJhSqkJAqbR40pnbjR/w6+x72+Xw+itgqMfF98D8JPCn2thwfDZ9/cXro7LOjfSflgLetpBoP1u9llm7/kbqirn+wyX/pmLz4wvsfXV9PplW30XBcu+m4dtNxrUbTNcyGu7r2sH72jc8/hHmJJwUm3pu79OUvVcO03ZJad1PpirtxL+3e2Uy5v24k3b1EwVWrlltW6+75hS++hgseHvPwjyPv9L72yuyNhddPhTXDIpEqki/p6GaDoOzlsKgjCCJOs4VmWBwd7T+2eDerGwdLqxKPdcltb710cnwgmVHJl3R2EjkkSaTVclG6g9hNh/HhPrySh939Am3BAPPHn7l4tfDuZQ+86RVD8scdbb6wLHvJ5quoWo1sQaOq1ckVdAajCqeOD2M3HBwHDgsGubwp7z3MbYn+8Z6oKAjDK+sJvrm+gVeSmBqP4TgumztZDrIauUONRKpMOqfRdFoUSzXUqondap3wBMJzMURhIRDwismMymC/wpn5CSaPRCiWDXp7giCIfHJllWLZJBLqolypc215i2yxui02/T7d5/PYlWqNnk6ZzZ00uw/yyD4fF85MMTsdY2RAQdOaJA+q5EsmZr2BZdv4vP6qx8nphtw/8qrfHwjrhoUousSjvcT6u7h5a4fFn7fJ5U062/y4Lgz1K+wk8rQQ+HN365IEa7aZ6f4+Mn3uaPJRlopmMRZXiD3dgW40qNUddMnCrNsc5FRUrYZhNUhnD0v1/a9uioBkZVcWq6WD0lg8Qme7TKVqIXqgL9TO2GAIBBerYeP3SeylcgRkmcz24lUwyx4gAM1uvZgkEp898fzkiNinyKzcSVBSTSLhDtqDPsJKO0NRhZCisPLTd3fVxLXPgLwHaAESzYqhZrfVztBQPBobaotGFGYmY4S62wkGZXqVbvb2s+6NHy7fytz/9lPgPpAR+JcE9AIDIE6MHzs9N3/65ZmZqeeeQhCkR+m8/vvab3vLSz8u62rqNvAXkAFqfwOkPI+h92xJFAAAAABJRU5ErkJggg==) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/world.png?2014-12-16T16:26:40Z) center right no-repeat!ie}.smwrdflink{float:right;font-size:small;padding:2px 0 0 0}.concept-documenation{border-top:1px dotted #AAAAAA}#bodyContent span.rdflink{float:right}#bodyContent span.rdflink a{padding-right:15px;color:#888888;background:url(data:image/gif;base64,R0lGODlhEQASAIQeAIWjzhpTo0h1tvH0+SpeqUh1tWeMwjlqr+Hp89Ld7cLR5rPG4RpSo8PS53aYyDhpr5Wv1FiBvO/z+KS62uDo8ileqWaMwXWXx7LF4KO62pSu1FeAu9Hc7P///wtHnQtHnSH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBAAAfACwAAAAAEQASAAAFU+AnjuQneKhQriclpSvJSC/qxaNX2/hn/6pY6udRAX03k82Y6dROJKjI01H8VknfDoXNbbmkougEBC+DZDES1aHAcChKZ9nzza89HbGefvfSDh8hADs=) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/rdf_flyer.18.gif?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:10px 10px}#bodyContent span.rdflink a:hover{text-decoration:none;color:#0000FF;padding-right:15px;margin-right:0px;background:url(data:image/gif;base64,R0lGODlhEQASAIQeAIWjzhpTo0h1tvH0+SpeqUh1tWeMwjlqr+Hp89Ld7cLR5rPG4RpSo8PS53aYyDhpr5Wv1FiBvO/z+KS62uDo8ileqWaMwXWXx7LF4KO62pSu1FeAu9Hc7P///wtHnQtHnSH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBAAAfACwAAAAAEQASAAAFU+AnjuQneKhQriclpSvJSC/qxaNX2/hn/6pY6udRAX03k82Y6dROJKjI01H8VknfDoXNbbmkougEBC+DZDES1aHAcChKZ9nzza89HbGefvfSDh8hADs=) center right no-repeat;background:url(//diablo.gamepedia.com/extensions/SemanticMediaWiki/resources/smw/../images/rdf_flyer.18.gif?2014-12-16T16:26:40Z) center right no-repeat!ie;background-size:10px 10px} table.smwb-factbox{border-left:8px solid #DDDDDD;width:100% }tr.smwb-title{font-size:200%;background-color:#DDDDDD;line-height:1.5}tr.smwb-title td{padding-left:5px;border-bottom:2px solid white}tr.smwb-propvalue{width:100%;background-color:#EEEEEE}tr.smwb-propvalue th{text-align:right;vertical-align:top;font-weight:bold;font-size:120%;background-color:#DDDDDD;padding:0.2em 0.6em;border-bottom:2px solid white;border-top:2px solid white}tr.smwb-propvalue td{padding-left:0.4em;background-color:#EEEEEE;border:0px solid white;border-bottom:2px solid white;border-top:2px solid white;width:90%}tr.smwb-center{background-color:#DDDDDD}span.smwb-value{} table.smwb-ifactbox{border-right:8px solid #DDDDDD;width:100% }tr.smwb-ititle{font-size:200%;background-color:#DDDDDD;line-height:1.5}tr.smwb-ititle td{padding-left:5px;border-bottom:2px solid white}tr.smwb-ipropvalue{width:100%;background-color:#EEEEEE;text-align:right}tr.smwb-ipropvalue th{text-align:left;font-weight:bold;font-size:120%;background-color:#DDDDDD;padding:0.2em 0.6em;border-bottom:3px solid white;border-top:3px solid white}tr.smwb-ipropvalue td{background-color:#EEEEEE;border-bottom:3px solid white;border-top:3px solid white;padding-right:1em;width:90%}span.smwb-ivalue{} .smw-spinner .text{padding-left:2.1em;font-size:12px;vertical-align:middle} .smw-spinner.left.mw-small-spinner{background-position:left;vertical-align:middle;display:inline-block;padding:0px !important} .smw-spinner.center.mw-small-spinner{vertical-align:middle;display:inline-block;padding:0px !important} table.smw-ask-query .smw-ask-query-condition{width:100%}table.smw-ask-query .smw-ask-query-printout{width:100%}.smw-form-horizontalrule{margin-bottom:10px}.smw-form-select,.smw-form-input{padding:1px 1px}.smw-form-checkbox{vertical-align:middle;cursor:pointer}label.smw-form-checkbox{vertical-align:middle;cursor:pointer}.smw-editpage-help{background-color:#F0F0F0;border:1px solid silver; padding:1em 1em 1.5em 1em;margin-bottom:2em}.smw-column-header{font-weight:bold;font-size:1.17em;line-height:1.6;margin-top:0.3em;margin-bottom:0;padding-bottom:0;color:black;overflow:hidden;padding-top:.5em}.smw-column{float:left;word-wrap:break-word}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:2ab5a23f58ee2322cdaddbf536dc551a */</style><style>
+div#mw-panel div.portal#p-sitePromos .body{margin-left:10px;margin-right:10px}#mw-panel.collapsible-nav .portal#p-sitePromos{margin:0 0 1.5em}#mw-panel.collapsible-nav .portal#p-sitePromos > h5{background-image:none;display:none}#mw-panel.collapsible-nav .portal#p-sitePromos .body{display:block}.wikiLinkSidebar > a,.adSidebar > a{margin-bottom:3px;display:inline-block;max-width:100%}.wikiLinkSidebar img,.adSidebar img{max-width:100%}.globalNotice{position:relative}.globalNotice.dismissed{display:none}.globalNotice .globalNoticeDismiss{position:absolute;right:0;top:0}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:c9612152e32ec81b3b2b8f825f298df6 */
+.mw-editsection{white-space:nowrap;padding-right:0.25em; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555} .mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-left:-0.25em;margin-right:0.25em;color:#555} .mw-content-rtl .mw-editsection-expanded .mw-editsection-bracket:first-of-type,.mw-content-ltr .mw-editsection-expanded .mw-editsection-bracket:not(:first-of-type){margin-right:-0.25em;margin-left:0.25em;color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:10d5f32d441941e72673fc73cdfe14a9 */</style><style>
+div#mw-panel div.portal#p-socialProfiles .body{margin-left:10px}div#mw-panel.collapsible-nav div.portal#p-socialProfiles{margin:0 0 1.5em}div#mw-panel.collapsible-nav div.portal#p-socialProfiles > h5{background-image:none;display:none}div#mw-panel.collapsible-nav div.portal#p-socialProfiles .body{display:block}#p-sharing ul li{margin:4px 0}#p-sharing #socialIconImages{width:250px}#p-sharing #socialIconImages > a{float:left;margin:0 0 4px 4px}#p-sharing #socialIconImages img{max-width:32px}.socialSidebar{overflow:hidden;text-align:center;width:150px}.socialSidebar .socialLink{display:inline-block;margin:2px}.socialSidebar .socialLink,.socialSidebar .socialLink a,.socialSidebar .socialLink a img{max-width:32px}#socialContainer{background:none repeat scroll 0 0 rgba(0,0,0,0.5);height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:10000}#socialPrompt{background-color:rgba(0,0,0,0.5);border-radius:10px 10px 10px 10px;box-shadow:5px 5px 20px;height:230px;margin:200px auto 0;padding:5px;width:500px;z-index:20000}#socialPrompt > #innerPopup{background-color:white;border-radius:5px 5px 5px 5px;color:black;display:block;height:100%;text-align:center;width:100%}#socialPrompt > #innerPopup > *{color:black;font-family:"Arial Black","Arial Bold",Gadget,sans-serif;margin:0 auto;max-width:90%}#socialPrompt > #innerPopup > p{color:black;display:inline-block;margin:10px 0 0}#socialPrompt > #innerPopup > div{color:black;margin:30px auto}#socialIconImages > a{margin:0 4px}#socialPopupButtons > a{background-color:#4D90FE;border:1px solid #3079ED;border-radius:2px 2px 2px 2px;box-shadow:0 1px 0 rgba(0,0,0,0.05);color:white;cursor:pointer;display:inline-block;font-size:11px;font-weight:bold;height:28px;line-height:26px;margin:0 8px;padding:0 10px;text-align:center;text-decoration:none;vertical-align:middle;white-space:nowrap;word-wrap:normal}#socialPopupButtons > a.secondaryButton{background-color:#F5F5F5;border:1px solid rgba(0,0,0,0.1);color:#444444}#socialPopupButtons > a.secondaryButton:hover{background-color:#F8F8F8;border:1px solid #c6c6c6}#socialPopupButtons > a:hover{border-color:#2f5bb7;background-color:#357ae8}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:c66249168f1a1ffc6df2f855a0ace430 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(/resources/src/mediawiki.action/images/green-checkmark.png?2014-12-15T17:31:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:6e9fd2ddb211df71005df20e02577a1e */
+#container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen #playerContainer{position:absolute !important;width:100% !important;height:100%! important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{ left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//diablo.gamepedia.com/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?2014-12-16T16:28:20Z)}.mw-imported-resource{border:thin solid black}.kaltura-icon{background-image:url(//diablo.gamepedia.com/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?2014-12-16T16:28:20Z) !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none repeat scroll 0% 0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous} .play-btn-large{width:70px;height:53px;background :url(//diablo.gamepedia.com/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?2014-12-16T16:28:20Z);position :absolute;cursor :pointer;border :none !important;z-index :1}.play-btn-large:hover{background :url(//diablo.gamepedia.com/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?2014-12-16T16:28:20Z)}.carouselContainer{position :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px 20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px 6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position :absolute;bottom:23px}.carouselPrevButton{left :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal !important;font-size:14px !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px 10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47) 55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71)) )}.alert-text{color :black !important}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:fcf03c0a8f002de55c06e93ec87f0a47 */
+#mw-panel.collapsible-nav .portal{background-position:left top;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAS1BMVEXb29vy8vLv7+/c3NzZ2dni4uLr6+vt7e3s7Ozw8PDn5+fj4+Ph4eHd3d3f39/o6Ojl5eXp6enx8fHa2trg4ODq6urk5OTz8/PY2NjolWftAAAAO0lEQVR4XrXAhwGAMAgEQB5I71X3n9QpPHqAGZidt2e02G8yedciQkv1/YPqIpFSdzbp9tjGsd4xhwl8yuMKHhkJhm8AAAAASUVORK5CYII=);background-image:url(//diablo.gamepedia.com/extensions/CollapsibleVector/modules/images/portal-break.png?2015-07-08T15:18:20Z) !ie;padding:0.25em 0 !important;margin:-11px 9px 10px 11px;   }#mw-panel.collapsible-nav .portal h3{font-size:0.75em;color:#4d4d4d;font-weight:normal;background-position:left center;background-repeat:no-repeat;background-image:url(//diablo.gamepedia.com/extensions/CollapsibleVector/modules/images/arrow-expanded.png?2015-07-08T15:18:20Z); background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNMTMuMDAyIDYuMDAxbC01IDUuMDAxLTUtNS4wMDF6IiBmaWxsPSIjNzk3OTc5Ii8+PC9zdmc+);background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNMTMuMDAyIDYuMDAxbC01IDUuMDAxLTUtNS4wMDF6IiBmaWxsPSIjNzk3OTc5Ii8+PC9zdmc+);padding:4px 0 3px 1.5em;margin-bottom:0}#mw-panel.collapsible-nav .portal h3:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav .portal h3 a{color:#4d4d4d;text-decoration:none}#mw-panel.collapsible-nav .portal .body{margin:0 0 0 1.25em;background-image:none !important;padding-top:0;display:none}#mw-panel.collapsible-nav .portal .body ul li{padding:0.25em 0}#mw-panel.collapsible-nav .portal.first{background-image:none;margin-top:0}#mw-panel.collapsible-nav .portal.first h3{display:none}#mw-panel.collapsible-nav .portal.persistent .body{display:block;margin-left:0.5em}#mw-panel.collapsible-nav .portal.persistent h3{background-image:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav .portal.collapsed h3{color:#0645ad;background-position:left center;background-repeat:no-repeat;background-image:url(//diablo.gamepedia.com/extensions/CollapsibleVector/modules/images/arrow-collapsed-ltr.png?2015-07-08T15:18:20Z); background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNNi4wMDEgMi45OThsNS4wMDEgNS01LjAwMSA1eiIgZmlsbD0iIzc5Nzk3OSIvPjwvc3ZnPg==);background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ij48cGF0aCBkPSJNNi4wMDEgMi45OThsNS4wMDEgNS01LjAwMSA1eiIgZmlsbD0iIzc5Nzk3OSIvPjwvc3ZnPg==);margin-bottom:0}#mw-panel.collapsible-nav .portal.collapsed h3:hover{text-decoration:underline}#mw-panel.collapsible-nav .portal.collapsed h3 a{color:#0645ad}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:9d10d912441e5957a2ae0d9ca07919a8 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="MeteOrb_files/load_002.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-css:7:86f6be0c15cd4a16bc8af1874c5cca51 */</style>
+<script src="MeteOrb_files/load_007.php"></script><script src="MeteOrb_files/load_004.php"></script><style title="spinjs"></style>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MeteOrb_Sorceress_by_Lethal_Weapon","wgTitle":"MeteOrb Sorceress by Lethal Weapon","wgCurRevisionId":152475,"wgRevisionId":152475,"wgArticleId":4111,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Sorceress Builds"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MeteOrb_Sorceress_by_Lethal_Weapon","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true},"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"hydra","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":false,"visualeditor-enable":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"profile-pref":1,"hydra-simplesearch":true,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"plain-text","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-user-rights":true,"echo-subscriptions-web-user-rights":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"language":"en","variant-gan":"gan",
+"variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs102":false,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs108":false,"searchNs109":false,"searchNs110":false,"searchNs111":false,"searchNs200":false,"searchNs202":false,"searchNs710":false,"searchNs711":false,"echo-subscriptions-web-friendship":1,"echo-subscriptions-email-friendship":1,"echo-subscriptions-web-profile-comment":1,"echo-subscriptions-email-profile-comment":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false
+});},{},{});
+/* cache key: diablo_gamepedia:resourceloader:filter:minify-js:7:dac07c1e17f03f9ef01c8cd8ca5c78be */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.smw.style","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.siteGlobals","ext.visualEditor.viewPageTarget.init","skins.vector.js"]);
+}</script><script src="MeteOrb_files/load_006.php"></script><script src="MeteOrb_files/load.php"></script>
+<meta itemprop="author" content="Gamepedia"><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/hydra/csshover.min.htc")}</style><![endif]--><script>
+var script = document.createElement('script');
+var tstamp = new Date();
+script.id = 'factorem';
+script.src = 'http://cdm.cursecdn.com/js/gamepedia/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = false;
+script.type='text/javascript';
+document.head.appendChild(script);
+</script><script type="text/javascript" src="MeteOrb_files/cdmfactorem_min.js" id="factorem"></script> <script src="MeteOrb_files/geo" id="curse_geo"></script><script src="MeteOrb_files/jstag" id="ox_script"></script><script src="MeteOrb_files/amzn_ads.js" id="a9_script"></script><script src="MeteOrb_files/cur3.js" id="casale_script"></script><script async="" src="MeteOrb_files/pubads_impl_73.js"></script><script async="" src="MeteOrb_files/gshowad.htm" id="pm_script_1"></script><script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-MeteOrb_Sorceress_by_Lethal_Weapon skin-hydra action-view vector-animateLayout show-ads site-diablowiki-gamepedia">
+<div id="netbar">
+	<ul class="netbar-left">
+		<li><a class="curse" href="http://www.gamepedia.com/">Gamepedia</a></li>
+					<li><a href="http://support.curse.com/">Help</a></li>
+					</ul>
+	<ul class="netbar-right">
+							<li><a href="http://diablo.gamepedia.com/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon" id="login-link">Sign In</a></li>
+							<li><a href="http://diablo.gamepedia.com/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon&amp;type=signup" id="register-link">Register</a></li>
+						</ul>
+</div>
+	<div id="global-wrapper">
+		<div id="mw-navigation">
+			<div id="mw-page-base" class="noprint"></div>
+			<div id="mw-head">
+				<!--<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>	</ul>
+</div>-->
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://diablo.gamepedia.com/MeteOrb_Sorceress_by_Lethal_Weapon" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk"><span><a href="http://diablo.gamepedia.com/Talk:MeteOrb_Sorceress_by_Lethal_Weapon" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 tabindex="0" id="p-variants-label"><span>Variants</span><a tabindex="-1" href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-sharing" role="sharing" class="vectorMenu" aria-labelledby="p-sharing-label">
+	<h4>Share</h4>
+	<h3 tabindex="0" id="p-sharing-label"><span>Share</span><a tabindex="-1" href="#"></a></h3>
+	<div class="menu">
+		<ul>
+							<li>
+				<div id="socialIconImages">
+					<a href="https://twitter.com/intent/tweet?text=Check+out+MeteOrb+Sorceress+by+Lethal+Weapon+on+Diablo+Wiki+--&amp;via=CurseGamepedia&amp;url=http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon" target="_blank"><img src="MeteOrb_files/twitter.png"></a><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon" target="_blank"><img src="MeteOrb_files/facebook.png"></a><a href="https://plus.google.com/share?url=http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon" target="_blank"><img src="MeteOrb_files/googleplus.png"></a><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon&amp;title=Check+out+MeteOrb+Sorceress+by+Lethal+Weapon+on+Diablo+Wiki+via+%40CurseGamepedia%3A+http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon" target="_blank"><img src="MeteOrb_files/reddit.png"></a><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon&amp;name=Diablo+Wiki&amp;description=Check+out+MeteOrb+Sorceress+by+Lethal+Weapon+on+Diablo+Wiki+via+%3Ca+href%3D%22https%3A%2F%2Ftwitter.com%2FCurseGamepedia%22+target%3D%22_blank%22%3E%40CurseGamepedia%3C%2Fa%3E%3A+http%3A%2F%2Fdiablo.gamepedia.com%2FMeteOrb_Sorceress_by_Lethal_Weapon" target="_blank"><img src="MeteOrb_files/tumblr.png"></a>
+				</div>
+</li>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://diablo.gamepedia.com/MeteOrb_Sorceress_by_Lethal_Weapon">View</a></span></li>
+					<li id="ca-ve-edit"><span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit" title="Edit this page with VisualEditor [alt-shift-v]" accesskey="v">Edit</a></span></li>
+					<li id="ca-edit" class="collapsible"><span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit" title="You can edit this page. Please use the preview button before saving [alt-shift-e]" accesskey="e">Edit source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input autocomplete="off" name="search" placeholder="Search" title="Search Diablo Wiki [alt-shift-f]" accesskey="f" id="searchInput" type="search"><input value="Special:Search" name="title" type="hidden"><input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" type="submit">		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<div id="p-logo"><a href="http://diablo.gamepedia.com/Diablo_III_Wiki" title="Visit the main page"><img src="MeteOrb_files/Wiki.png"></a></div>
+				<!-- <div id="p-portals"> -->
+					<div class="portal first persistent" role="navigation" id="p-Diablo_III" aria-labelledby="p-Diablo_III-label">
+	<h3 id="p-Diablo_III-label">Diablo III</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://diablo.gamepedia.com/Diablo_III_Wiki" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-Classes"><a href="http://diablo.gamepedia.com/Portal:Classes">Classes</a></li>
+			<li id="n-Items"><a href="http://diablo.gamepedia.com/Portal:Items">Items</a></li>
+			<li id="n-Bestiary"><a href="http://diablo.gamepedia.com/Portal:Bestiary">Bestiary</a></li>
+			<li id="n-Zones"><a href="http://diablo.gamepedia.com/Portal:Zones">Zones</a></li>
+			<li id="n-Quests"><a href="http://diablo.gamepedia.com/Quests">Quests</a></li>
+			<li id="n-Game-Mechanics"><a href="http://diablo.gamepedia.com/Game_Mechanics">Game Mechanics</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-Diablo_II" aria-labelledby="p-Diablo_II-label">
+	<h3 tabindex="0" id="p-Diablo_II-label"><a aria-expanded="true" aria-pressed="true" role="button" aria-controls="p-Diablo_II-list" aria-haspopup="true" href="#">Diablo II</a></h3>
+	<div style="display: block;" class="body">
+		<ul id="p-Diablo_II-list">
+			<li id="n-Main-Page"><a href="http://diablo.gamepedia.com/Diablo_II_Wiki">Main Page</a></li>
+			<li id="n-Classes"><a href="http://diablo.gamepedia.com/Classes_%28Diablo_II%29">Classes</a></li>
+			<li id="n-Class-Builds"><a href="http://diablo.gamepedia.com/Class_Builds_%28Diablo_II%29">Class Builds</a></li>
+			<li id="n-Items"><a href="http://diablo.gamepedia.com/Items_%28Diablo_II%29">Items</a></li>
+			<li id="n-Cube-Recipes"><a href="http://diablo.gamepedia.com/Horadric_Cube_Recipes_%28Diablo_II%29">Cube Recipes</a></li>
+			<li id="n-Bestiary"><a href="http://diablo.gamepedia.com/Monsters_%28Diablo_II%29">Bestiary</a></li>
+			<li id="n-Areas"><a href="http://diablo.gamepedia.com/Areas_%28Diablo_II%29">Areas</a></li>
+			<li id="n-Quests"><a href="http://diablo.gamepedia.com/Quests_%28Diablo_II%29">Quests</a></li>
+			<li id="n-NPCs"><a href="http://diablo.gamepedia.com/NPCs_%28Diablo_II%29">NPCs</a></li>
+			<li id="n-Glossary"><a href="http://diablo.gamepedia.com/Glossary_%28Diablo_II%29">Glossary</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-Diablo_I" aria-labelledby="p-Diablo_I-label">
+	<h3 tabindex="0" id="p-Diablo_I-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-Diablo_I-list" aria-haspopup="true" href="#">Diablo I</a></h3>
+	<div class="body">
+		<ul id="p-Diablo_I-list">
+			<li id="n-Main-Page"><a href="http://diablo.gamepedia.com/Diablo_I_Wiki">Main Page</a></li>
+			<li id="n-Spells"><a href="http://diablo.gamepedia.com/Spells_%28Diablo_I%29">Spells</a></li>
+			<li id="n-Monsters"><a href="http://diablo.gamepedia.com/Monsters_%28Diablo_I%29">Monsters</a></li>
+			<li id="n-Quests"><a href="http://diablo.gamepedia.com/Quests_%28Diablo_I%29">Quests</a></li>
+			<li id="n-Areas"><a href="http://diablo.gamepedia.com/Areas_%28Diablo_I%29">Areas</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-Mods" aria-labelledby="p-Mods-label">
+	<h3 tabindex="0" id="p-Mods-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-Mods-list" aria-haspopup="true" href="#">Mods</a></h3>
+	<div class="body">
+		<ul id="p-Mods-list">
+			<li id="n-Mods"><a href="http://diablo.gamepedia.com/Portal:Mods">Mods</a></li>
+			<li id="n-PlugY"><a href="http://diablo.gamepedia.com/PlugY">PlugY</a></li>
+			<li id="n-Median-XL"><a href="http://diablo.gamepedia.com/Portal:Median_XL">Median XL</a></li>
+			<li id="n-The-Hell"><a href="http://diablo.gamepedia.com/The_Hell">The Hell</a></li>
+			<li id="n-The-Phrozen-Keep"><a href="http://d2mods.com/" rel="nofollow" target="_blank">The Phrozen Keep</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-Lore" aria-labelledby="p-Lore-label">
+	<h3 tabindex="0" id="p-Lore-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-Lore-list" aria-haspopup="true" href="#">Lore</a></h3>
+	<div class="body">
+		<ul id="p-Lore-list">
+			<li id="n-Main-Page"><a href="http://diablo.gamepedia.com/Portal:Lore">Main Page</a></li>
+			<li id="n-Lore-Summary"><a href="http://diablo.gamepedia.com/Lore_Summary">Lore Summary</a></li>
+			<li id="n-Angels"><a href="http://diablo.gamepedia.com/Angel">Angels</a></li>
+			<li id="n-Demons"><a href="http://diablo.gamepedia.com/Demons">Demons</a></li>
+			<li id="n-Nephalem"><a href="http://diablo.gamepedia.com/Nephalem">Nephalem</a></li>
+			<li id="n-Diablo-Timeline"><a href="http://diablo.gamepedia.com/Diablo_Timeline">Diablo Timeline</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-Diablo_Wiki" aria-labelledby="p-Diablo_Wiki-label">
+	<h3 tabindex="0" id="p-Diablo_Wiki-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-Diablo_Wiki-list" aria-haspopup="true" href="#">Diablo Wiki</a></h3>
+	<div class="body">
+		<ul id="p-Diablo_Wiki-list">
+			<li id="n-Categories"><a href="http://diablo.gamepedia.com/Category:Browse">Categories</a></li>
+			<li id="n-recentchanges"><a href="http://diablo.gamepedia.com/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://diablo.gamepedia.com/Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+			<li id="n-Community-Portal"><a href="http://diablo.gamepedia.com/Diablo_Wiki:Community_Portal">Community Portal</a></li>
+			<li id="n-Admin-noticeboard"><a href="http://diablo.gamepedia.com/Diablo_Wiki:Admin_noticeboard">Admin noticeboard</a></li>
+			<li id="n-Style-Guide"><a href="http://diablo.gamepedia.com/Diablo_Wiki:Style_Guide">Style Guide</a></li>
+			<li id="n-DiabloFans"><a href="http://www.diablofans.com/" target="_blank">DiabloFans</a></li>
+			<li id="n-Wiki-Forums"><a href="http://www.diablofans.com/forums/forumdisplay.php?f=46" target="_blank">Wiki Forums</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-Gamepedia" aria-labelledby="p-Gamepedia-label">
+	<h3 tabindex="0" id="p-Gamepedia-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-Gamepedia-list" aria-haspopup="true" href="#">Gamepedia</a></h3>
+	<div class="body">
+		<ul id="p-Gamepedia-list">
+			<li id="n-Gamepedia-Forums"><a href="http://gamepedia.com/forums" target="_blank">Gamepedia Forums</a></li>
+			<li id="n-Help-Wiki"><a href="http://help.gamepedia.com/" target="_blank">Help Wiki</a></li>
+			<li id="n-Contact-Us"><a href="http://help.gamepedia.com/How_To_Contact_Gamepedia" target="_blank">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal collapsed" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 tabindex="0" id="p-tb-label"><a aria-expanded="false" aria-pressed="false" role="button" aria-controls="p-tb-list" aria-haspopup="true" href="#">Tools</a></h3>
+	<div class="body">
+		<ul id="p-tb-list">
+			<li id="t-whatlinkshere"><a href="http://diablo.gamepedia.com/Special:WhatLinksHere/MeteOrb_Sorceress_by_Lethal_Weapon" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://diablo.gamepedia.com/Special:RecentChangesLinked/MeteOrb_Sorceress_by_Lethal_Weapon" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://diablo.gamepedia.com/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;oldid=152475" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=info">Page information</a></li>
+			<li id="t-smwbrowselink"><a href="http://diablo.gamepedia.com/Special:Browse/MeteOrb_Sorceress_by_Lethal_Weapon" rel="smw-browse">Browse properties</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal persistent" role="navigation" id="p-socialProfiles" aria-labelledby="p-socialProfiles-label">
+	<h3 id="p-socialProfiles-label"></h3>
+	<div class="body">
+		<div class="socialSidebar">
+						<script type="text/javascript">
+							document.getElementById('p-socialProfiles').className = 'portal persistent';
+						</script>
+						<div class="socialLink twitter"><a href="https://twitter.com/CurseGamepedia" target="_blank"><img src="MeteOrb_files/twitter.png"></a></div><div class="socialLink facebook"><a href="https://www.facebook.com/CurseGamepedia" target="_blank"><img src="MeteOrb_files/facebook.png"></a></div><div class="socialLink youtube"><a href="https://www.youtube.com/CurseGP" target="_blank"><img src="MeteOrb_files/youtube.png"></a></div><div class="socialLink googleplus"><a href="https://plus.google.com/115617982346226991528" target="_blank" rel="Publisher"><img src="MeteOrb_files/googleplus.png"></a></div>
+					</div>	</div>
+</div>
+<div class="portal persistent" role="navigation" id="p-sitePromos" aria-labelledby="p-sitePromos-label">
+	<h3 id="p-sitePromos-label"></h3>
+	<div class="body">
+		
+						<div class="wikiLinkSidebar"><a href="https://docs.google.com/forms/d/1KCZMC8Wp3pZihTf_foqVfRV7enoJA14JkZAcz4HA-d8/viewform"><img src="MeteOrb_files/survey-sidebar.png" alt="Respond to the Gamepedia Annual Survey for a Chance to Win Steam Cash" title="Respond to the Gamepedia Annual Survey for a Chance to Win Steam Cash"></a>
+<a href="http://madmax.gamepedia.com/"><img src="MeteOrb_files/mad-max-wiki-sidebar.png" alt="Check out the Official Mad Max wiki, the #1 community-generated resource for Warface weapons, missions, and more" title="Check out the Official Mad Max wiki, the #1 community-generated resource for Warface weapons, missions, and more"></a>
+
+						</div>
+							<script type="text/javascript">
+								document.getElementById('p-sitePromos').className = 'portal persistent';
+							</script>	</div>
+</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div id="pageWrapper">
+			<div id="mw-head-base" class="noprint"></div>
+			<!-- content -->
+			<div id="content" itemprop="articleBody" class="mw-body">
+				<a id="top"></a>
+				<div id="mw-js-message" style="display:none;"></div>
+								<!-- first ads placement -->
+									<div class="atflb">
+						<div id="cdm-zone-01"><div style="border: 0pt none;" id="google_ads_iframe_/58309977/gamepedia_3__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/58309977/gamepedia_3" id="google_ads_iframe_/58309977/gamepedia_3" frameborder="0" height="90" width="728"></iframe></div></div>					</div>
+								<!-- /first ads placement -->
+				<!-- firstHeading -->
+				<h1 id="firstHeading" class="firstHeading">
+					<span itemprop="name" dir="auto">MeteOrb Sorceress by Lethal Weapon</span>
+				</h1>
+				<!-- /firstHeading -->
+				<div id="bodyWrapper">
+					<!-- bodyContent -->
+					<div id="bodyContent">
+												<!-- 300x250 Ad block -->
+						<div class="atfmrec">
+							<div id="cdm-zone-02"><div style="border: 0pt none;" id="google_ads_iframe_/58309977/gamepedia_2__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/58309977/gamepedia_2" id="google_ads_iframe_/58309977/gamepedia_2" frameborder="0" height="250" width="300"></iframe></div></div>						</div>
+						<!-- End 300x250 Ad block -->
+												<!-- /sidebar -->
+												<div id="siteSub">From Diablo Wiki</div>
+												<div id="contentSub"></div>
+																		<div id="jump-to-nav" class="mw-jump">
+							Jump to:							<a href="#mw-navigation">navigation</a>, 							<a href="#p-search">search</a>
+						</div>
+						<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><table class="infobox dftable" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="padding: 3px;">
+<table cellspacing="0">
+
+<tbody><tr>
+<th class="header" colspan="2"> MeteOrb Sorceress
+</th></tr>
+<tr style="display:none">
+<td class="image" colspan="2">
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> Game
+</th>
+<td style=""> <a href="http://diablo.gamepedia.com/Diablo_II" title="Diablo II">Diablo II</a>
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> Class
+</th>
+<td style=""> <a href="http://diablo.gamepedia.com/Sorceress_%28Diablo_II%29" title="Sorceress (Diablo II)">Sorceress</a>
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> Primary Attack
+</th>
+<td style=""> <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a>, <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> PvM/PvP
+</th>
+<td style=""> PvM
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> Can&nbsp;Solo&nbsp;Hell?
+</th>
+<td style=""> Yes
+</td></tr>
+<tr style="">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th style="width: 1px;"> Creator
+</th>
+<td style=""> <a href="http://diablo.gamepedia.com/index.php?title=User:Lethal_Weapon&amp;action=edit&amp;redlink=1" class="new" title="User:Lethal Weapon (page does not exist)">Lethal_Weapon</a>
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header7}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell7}}}
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header8}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell8}}}
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header9}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell9}}}
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header10}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell10}}}
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header11}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell11}}}
+</td></tr>
+<tr style="display: none;">
+<td style="padding: 1px;">
+</td></tr>
+<tr>
+<th class="header2" colspan="2" style="display: none; width: 1px;"> {{{Header12}}}
+</th>
+<td colspan="2" style="display: none;"> {{{Cell12}}}
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<div class="floatleft"><a href="http://diablo.gamepedia.com/File:Sorceress.gif?version=310c18e8cb9fb350260b296053b5c1b3" class="image"><img alt="Sorceress.gif" src="MeteOrb_files/Sorceress.gif" height="209" width="109"></a></div>
+<p><br>
+</p>
+<dl>
+<dd>The <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a>
+ is probably one of the most popular characters played in the world of 
+Sanctuary, due to her brutal casting powers and her modes of quick 
+transportation.  This will be the first guide that I have ever put on 
+paper, and hopefully you will find it interesting, informative, and easy
+ to follow to make your decisions on your next <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a> build!
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>The MeteOrb build primarily focuses on two very powerful skills that the <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a> has at her disposal, <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a> and <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a>.
+  With that being said, you have probably already noticed that these two
+ skills are on two different skill trees, and are wondering how you can 
+afford investing in two different skill trees! We will cover all of this
+ later in the guide and hopefully you will understand why this is such a
+ versatile build.
+</dd>
+</dl>
+<p><br>
+</p>
+<center> <b>*NOTE*</b> </center>
+<dl>
+<dd>This build is designed for <a href="http://diablo.gamepedia.com/Diablo_II:_Lord_of_Destruction" title="Diablo II: Lord of Destruction">Diablo II: Lord of Destruction</a> <a href="http://diablo.gamepedia.com/Patch_1.12_%28Diablo_II%29" title="Patch 1.12 (Diablo II)">patch 1.12b</a>.
+ Therefore, please be aware that if any new patches are released (i.e. 
+the mysterious 1.13 patch), this build is subject to change or become 
+obsolete due to skill buffs/debuffs.
+</dd>
+</dl>
+<p><br>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Skill_Point_Distribution"><span class="tocnumber">2</span> <span class="toctext">Skill Point Distribution</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Cold_Spells"><span class="tocnumber">2.1</span> <span class="toctext">Cold Spells</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Lightning_Spells"><span class="tocnumber">2.2</span> <span class="toctext">Lightning Spells</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Fire_Spells"><span class="tocnumber">2.3</span> <span class="toctext">Fire Spells</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Skill_Investment_Recap"><span class="tocnumber">2.4</span> <span class="toctext">Skill Investment Recap</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Stat_Point_Distribution"><span class="tocnumber">3</span> <span class="toctext">Stat Point Distribution</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Gear_Allotment"><span class="tocnumber">4</span> <span class="toctext">Gear Allotment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Optimal_Killing_Gear"><span class="tocnumber">4.1</span> <span class="toctext">Optimal Killing Gear</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#MFing_Gear"><span class="tocnumber">4.2</span> <span class="toctext">MFing Gear</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Mercernary"><span class="tocnumber">5</span> <span class="toctext">Mercernary</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=1" title="Edit section: Overview" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=1" title="Edit section: Overview">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd>Before we jump right into the basics of this guide, there are a few 
+things to note before we get started. If you are looking for <a href="http://diablo.gamepedia.com/Sorceress_Builds" title="Sorceress Builds">Sorceress Builds</a> that will kill fast, with high dealing damage, this is probably not the build for you; you might want to check out the <a href="http://diablo.gamepedia.com/index.php?title=Lightning_Sorceress&amp;action=edit&amp;redlink=1" class="new" title="Lightning Sorceress (page does not exist)">Lightning Sorceress</a>.  This build is made for versatility due to the rarity of Cold/Fire immunes in the game. This build could very easily solo <a href="http://diablo.gamepedia.com/Hell_%28Difficulty%29" title="Hell (Difficulty)" class="mw-redirect">Hell (Difficulty)</a>
+ without having to skip over monsters that are immune to her spells. 
+Being a dual elemental, she will be able to take care of almost any 
+monster that dares cross your path!
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>Furthermore, you might also want to consider what you are using this build for: <a href="http://diablo.gamepedia.com/Magic_Find_%28Diablo_II%29" title="Magic Find (Diablo II)">Magic Find</a>, PvP (Player vs. Player), Rushing, Fun.  This build is definitely not one I would suggest for PvP, but would work well for <a href="http://diablo.gamepedia.com/Magic_Find_%28Diablo_II%29" title="Magic Find (Diablo II)">Magic Find</a> runs and Rushing/Fun. 
+</dd>
+</dl>
+<p><br>
+</p>
+<center> <b>Important Note!</b> </center>
+<dl>
+<dd>Throughout the guide, you will find that I give you the option to 
+make decisions for yourself. I am here to guide you through the decision
+ process, but ultimately, it is up to you to choose how you want your 
+character to operate and thrive! Furthermore, I would suggest that you 
+read through this guide completely and plan out your character on paper 
+from skills/stats/equipment before starting, because once you invest 
+points, you cant get them back. Now, enough talking, lets get on to the 
+stuff that you came here to read!
+</dd>
+</dl>
+<p><br>
+</p>
+<h2><span class="mw-headline" id="Skill_Point_Distribution">Skill Point Distribution</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=2" title="Edit section: Skill Point Distribution" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=2" title="Edit section: Skill Point Distribution">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd>For this section I am going to break it down into three separate 
+parts. First, I will cover the Sorceress’s Cold spells, followed by the 
+Lightning and Fire spells. Each section will contain an explanation as 
+to why you will invest points into certain skills and certain max/min 
+you should obtain for the effectiveness of the build. I will give you a 
+breakdown of when you should invest points into certain skills while 
+leveling, and I will let you know what skills should be maxed and in 
+what order. I will show you what skills you should have invested by 
+level 88 (including all bonus). Onwards!
+</dd>
+</dl>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="Cold_Spells">Cold Spells</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=3" title="Edit section: Cold Spells" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=3" title="Edit section: Cold Spells">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="floatright"><a href="http://diablo.gamepedia.com/File:MeteOrb_Cold_Skill_Tree.png" class="image"><img alt="MeteOrb Cold Skill Tree.png" src="MeteOrb_files/MeteOrb_Cold_Skill_Tree.png" height="432" width="321"></a></div>
+<dl>
+<dd>As you can see, I have pointed out what skills should be invested in
+ based on the picture of your skill tree on the right. Let’s give a 
+short recap of the cold spells:
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b>Pre-Requisites</b>: Obviously, <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a>
+ will be your primary skill under the cold spells tree, so we need to 
+invest points into all of the pre-requisites. That includes: <a href="http://diablo.gamepedia.com/Ice_Bolt" title="Ice Bolt" class="mw-redirect">Ice Bolt</a>, <a href="http://diablo.gamepedia.com/Ice_Blast" title="Ice Blast" class="mw-redirect">Ice Blast</a>, <a href="http://diablo.gamepedia.com/Glacial_Spike" title="Glacial Spike" class="mw-redirect">Glacial Spike</a>, <a href="http://diablo.gamepedia.com/Frost_Nova_%28Diablo_II%29" title="Frost Nova (Diablo II)">Frost Nova</a>, and <a href="http://diablo.gamepedia.com/Blizzard_%28Diablo_II%29" title="Blizzard (Diablo II)">Blizzard</a>.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Frozen_Armor" title="Frozen Armor" class="mw-redirect">Frozen Armor</a></b>:
+ This is a very beneficial spell for the sorceress. With only one point,
+ plus your +skills from your equipment, this spell will give your 
+character a very good boost in defense (plus, it will freeze enemies). <i><b>This is the only armor you will invest points it, ever</b></i>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a></b>: This is your bread and butter verse those fire immunes. It is also very effective in Nightmare. Max this skill <b>AS SOON AS POSSIBLE</b>.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Cold_Mastery" title="Cold Mastery" class="mw-redirect">Cold Mastery</a></b>: This is where you might have to make a decision as to how many points you want to invest into this skill. <a href="http://diablo.gamepedia.com/Cold_Mastery" title="Cold Mastery" class="mw-redirect">Cold Mastery</a> will drastically increase the killing power of the <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a>;
+ however, IT WILL NOT make cold immunes vulnerable to cold spells. You 
+will always use your fire spells against those monsters. Now, with that 
+being said, I suggest that you invest a minimum of 6-7 points into this 
+skill; however, I would also recommend that you get at least +10 skills 
+from your equipment. Ideal minimum for this skill is around levels 16-18
+ (that gets you around -100% to Enemy Cold Resistance, which is good 
+amount).
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>Now, you might be wondering why we are not investing any points into <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a> synergy skill, <a href="http://diablo.gamepedia.com/Ice_Bolt" title="Ice Bolt" class="mw-redirect">Ice Bolt</a>. We are unable to boost this synergy due to the lack of skill points at our disposal and the synergy only boost <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a> by +2% per level, which is just not worth it. Moving on!
+</dd>
+</dl>
+<h3><span class="mw-headline" id="Lightning_Spells">Lightning Spells</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=4" title="Edit section: Lightning Spells" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=4" title="Edit section: Lightning Spells">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="floatleft"><a href="http://diablo.gamepedia.com/File:MeteOrb_Lightning_Skill_Tree.png" class="image"><img alt="MeteOrb Lightning Skill Tree.png" src="MeteOrb_files/MeteOrb_Lightning_Skill_Tree.png" height="432" width="321"></a></div>
+<p><br>
+</p><p><br>
+</p><p><br>
+</p><p><br>
+</p>
+<dl>
+<dd>Now, if you haven’t noticed already, we are not using <a href="http://diablo.gamepedia.com/Lightning_Spells" title="Lightning Spells" class="mw-redirect">Lightning Spells</a> as a mode of offense; There are only three spells that we need to invest in on this skill tree.
+</dd>
+</dl>
+<p><br>
+-<b><a href="http://diablo.gamepedia.com/Static_Field" title="Static Field" class="mw-redirect">Static Field</a></b>:
+ This skill is invaluable when it comes to boss fights. It will take 
+their remaining health down by 1/4th each time. Only invest  1 point 
+here.
+</p><p><br>
+-<b><a href="http://diablo.gamepedia.com/Telekinesis" title="Telekinesis" class="mw-redirect">Telekinesis</a></b>: This is really just a pre-requisite for <a href="http://diablo.gamepedia.com/Teleport_%28Diablo_II%29" title="Teleport (Diablo II)">Teleport</a>, but some people actually like to play around this skill. Use to your liking!
+</p><p><br>
+-<b><a href="http://diablo.gamepedia.com/Teleport_%28Diablo_II%29" title="Teleport (Diablo II)">Teleport</a></b>:
+ This is your mode of quick transportation. It might be a mana killer in
+ the early part of the game, but once you start to get your equipment, 
+you wont have a problem. Only 1 point here as well!
+</p><p><br>
+</p><p><br>
+</p><p><br>
+</p>
+<h3><span class="mw-headline" id="Fire_Spells">Fire Spells</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=5" title="Edit section: Fire Spells" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=5" title="Edit section: Fire Spells">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="floatright"><a href="http://diablo.gamepedia.com/File:MeteOrb_Fire_Skill_Tree.png" class="image"><img alt="MeteOrb Fire Skill Tree.png" src="MeteOrb_files/MeteOrb_Fire_Skill_Tree.png" height="432" width="321"></a></div>
+<dl>
+<dd>Your fire skills will be your primary source for killing monsters in the game. Now, lets see how these skills break down:
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b>Pre-Requisites</b>: These consist of <a href="http://diablo.gamepedia.com/Inferno_%28Diablo_II%29" title="Inferno (Diablo II)">Inferno</a>, <a href="http://diablo.gamepedia.com/Blaze" title="Blaze" class="mw-redirect">Blaze</a>, and <a href="http://diablo.gamepedia.com/Fire_Wall" title="Fire Wall" class="mw-redirect">Fire Wall</a>. This will allow us to get <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>, our primary skill. Only 1 point into these.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Warmth" title="Warmth" class="mw-redirect">Warmth</a></b>:
+ This skill will help recover your mana at a rapid rate. Only 1 point 
+will need to go here due to the amount of +skills you will have from 
+your equipment. 
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a></b>: This is the basic fire spell that leads up to the more powerful <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a> and <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>. This skill will <i><b>NOT</b></i> be maxed, though you might find yourself investing around 5 points here (I will explain later, see below). <a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a> is the synergy for both <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a> and <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a></b>: This is a solid fire spell that you might find yourself using more than <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>. It is also a synergy for <a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a> and <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>. Max this skill after <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a></b>:
+ This is your primary fire spell that will do a lot killing for you. You
+ will probably have to use to the delay in casting and where to aim, but
+ you will quickly master this awesome spell. It also very useful to moat
+ <a href="http://diablo.gamepedia.com/Mephisto" title="Mephisto">Mephisto</a> while you <a href="http://diablo.gamepedia.com/Magic_Find_%28Diablo_II%29" title="Magic Find (Diablo II)">Magic Find</a>. Max this skill second, after <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a> (Though you might have a few invested here until you are able to get <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a> at level 30)
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>-<b><a href="http://diablo.gamepedia.com/Fire_Mastery" title="Fire Mastery" class="mw-redirect">Fire Mastery</a></b>: This skill will drastically boost your fire damage and is very important for your build. Max this skill after <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a>. However, if you find yourself using <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a> more than <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>, you might want to put a few points into <a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a> instead of maxing <a href="http://diablo.gamepedia.com/Fire_Mastery" title="Fire Mastery" class="mw-redirect">Fire Mastery</a> right away (You WILL eventually, depending on your level). <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a> will get a bigger boost in damage from the synergy of <a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a> than from <a href="http://diablo.gamepedia.com/Fire_Mastery" title="Fire Mastery" class="mw-redirect">Fire Mastery</a>.
+</dd>
+</dl>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="Skill_Investment_Recap">Skill Investment Recap</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=6" title="Edit section: Skill Investment Recap" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=6" title="Edit section: Skill Investment Recap">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd>The distribution of your skill points is very important for you to 
+be effective with this build while leveling. You do not have a follow 
+this distribution to the tee, but it is just a guide to help you along. 
+It might also be very tough in the early levels due to mana issues, but 
+stick to it, and you will be happy with the result. Also, I will assume a
+ general level for bonus skills (<a href="http://diablo.gamepedia.com/Den_of_Evil" title="Den of Evil" class="mw-redirect">Den of Evil</a>, <a href="http://diablo.gamepedia.com/Radament%27s_Lair" title="Radament's Lair" class="mw-redirect">Radament's Lair</a>, and <a href="http://diablo.gamepedia.com/Izual_%28Diablo_II%29" title="Izual (Diablo II)">Izual</a>), so just stick to the guide the best you can.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Level 2:</b> 1 point into Fire Bolt
+</dd>
+<dd>-<b>Level 3:</b> 1 point into Warmth
+</dd>
+<dd>-<b>Den of Evil:</b> 1 point into Ice Bolt
+</dd>
+<dd>-<b>Level 4:</b> Save this point
+</dd>
+<dd>-<b>Level 5:</b> Save this point
+</dd>
+<dd>-<b>Level 6:</b> 1 point into Ice Blast, 1 point into Frost Nova, 1 point into Static Field
+</dd>
+<dd>-<b>Level 7:</b> 1 point into Telekinesis
+</dd>
+<dd>-<b>Level 8:</b> 1 point into Inferno
+</dd>
+<dd>-<b>Level 9:</b> Save this point
+</dd>
+<dd>-<b>Level 10:</b> Save this point
+</dd>
+<dd>-<b>Level 11:</b> Save this point
+</dd>
+<dd>-<b>Level 12:</b> 1 point into Fire Ball, 1 point into Blaze
+</dd>
+<dd>-<b>Level 13:</b> Save this point
+</dd>
+<dd>-<b>Level 14:</b> Save this point
+</dd>
+<dd>-<b>Level 15:</b> Save this point
+</dd>
+<dd>-<b>Radament:</b> Save this point
+</dd>
+<dd>-<b>Level 16:</b> Save this point
+</dd>
+<dd>-<b>Level 17:</b> Save this point
+</dd>
+<dd>-<b>Level 18:</b> 1 point into Teleport, 1 point into Glacial Spike, 1 point into Fire Wall
+</dd>
+<dd>-<b>Level 19:</b> Save this point
+</dd>
+<dd>-<b>Level 20:</b> Save this point
+</dd>
+<dd>-<b>Izual:</b> Save this point
+</dd>
+<dd>-<b>Level 21:</b> Save this point
+</dd>
+<dd>-<b>Level 22:</b> Save this point 
+</dd>
+<dd>-<b>Level 23:</b> Save this point
+</dd>
+<dd>-<b>Level 24:</b> 1 point into Meteor, 1 point into Blizzard
+</dd>
+<dd>-<b>Level 25:</b> 1 point into Meteor
+</dd>
+<dd>-<b>Level 26:</b> 1 point into Meteor
+</dd>
+<dd>-<b>Level 27:</b> 1 point into Meteor
+</dd>
+<dd>-<b>Level 28:</b> 1 point into Meteor
+</dd>
+<dd>-<b>Level 29:</b> 1 point into Meteor
+</dd>
+<dd>-<b>Level 30:</b> 1 point into Meteor, 1 point into Frozen Orb, 1 point into Fire Mastery, 1 point into Cold Mastery.
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>From level 30 on, you will need to Max <a href="http://diablo.gamepedia.com/Frozen_Orb_%28Diablo_II%29" title="Frozen Orb (Diablo II)">Frozen Orb</a> first and get your <a href="http://diablo.gamepedia.com/Cold_Mastery" title="Cold Mastery" class="mw-redirect">Cold Mastery</a> to your desired level 6+, then you will max <a href="http://diablo.gamepedia.com/Meteor_%28Diablo_II%29" title="Meteor (Diablo II)">Meteor</a>, <a href="http://diablo.gamepedia.com/Fire_Ball" title="Fire Ball" class="mw-redirect">Fire Ball</a>, and <a href="http://diablo.gamepedia.com/Fire_Mastery" title="Fire Mastery" class="mw-redirect">Fire Mastery</a> in that order. After these have all been satisfied, should be around level 88, the rest of your skills go into <a href="http://diablo.gamepedia.com/Fire_Bolt" title="Fire Bolt" class="mw-redirect">Fire Bolt</a>.
+</dd>
+</dl>
+<h2><span class="mw-headline" id="Stat_Point_Distribution">Stat Point Distribution</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=7" title="Edit section: Stat Point Distribution" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=7" title="Edit section: Stat Point Distribution">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd>Stat point distributions can be a very debatable area for many 
+players. I will give you some options and you will ultimately decide how
+ you want to invest your stat points. The <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a>
+ gets the shaft when it comes to her stat points, since she only gets 2 
+life per 1 point of vitality. So, I will go over some options with you, 
+so you can decide what you want to do. The following chart will show you
+ what stat points the <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a> will come with when you start the game:
+</dd>
+</dl>
+<p><br>
+</p>
+<center>
+<table>
+<tbody><tr>
+<th bgcolor="#7D0B0D" width="150">Stat
+</th>
+<th bgcolor="#7D0B0D" width="75">Starting Points
+</th></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Strength
+</td>
+<td bgcolor="#2F0600">10
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Dexterity
+</td>
+<td bgcolor="#2F0600">25
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Vitality
+</td>
+<td bgcolor="#2F0600">10
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Energy
+</td>
+<td bgcolor="#2F0600">35
+</td></tr></tbody></table>
+</center>
+<p><br>
+</p>
+<dl>
+<dd>Now that we see what stats the <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a>
+ comes with, we will able to work from there. Reference the following 
+four categories to see how you should distribute your stat points:
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd>-<b>Strength</b>: This is a very important stat because it will 
+allow you to wear/use certain equipment throughout the game. With that 
+being said, you only need to put as much strength as the highest 
+strength requirement for your gear. For some, it might be 156 if you 
+plan to use the monarch shield or lower depending on your gear choices. 
+Also, if you are playing twinked (i.e. using +str from charms/items/etc.
+ you need to calculate the bare min needed to wear your gear). This stat
+ can range anywhere from 75-156.
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd>-<b>Dexterity</b>: This is one of the highly debatable stat points. Dexterity, for a <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a>,
+ is only beneficial if you want to have higher chance to block. Some 
+will argue that you need to have max block (75%) or that you don’t need 
+any at all. I will give you my two cents. Maxing block will cost you A 
+LOT of points into Dexterity; however, you will block 75% of physical 
+attacks. Some say that this is beneficial since you only get 2 life per 1
+ point of Vitality. Furthermore, you will only block 75% of attacks if 
+you ‘’’NOT MOVING’’’. If you are hit while you are moving, then the 
+block percentage is reduced to 1/3rd of its original value. So, some 
+people say to keep dexterity at its base amount and invest all your 
+points into Vitality. Also, you could also shoot for 50% chance to block
+ instead of maxing it. This stat can range anywhere from Base - 200+ 
+(Depending on your shield). The choice is yours!
+<ul>
+<li>Note: The calculation for Blocking is: Total Blocking = (Blocking * (Dexterity - 15)) / (Character Level * 2)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd>-<b>Vitality</b>: This is your life blood. This should have everything else that you don’t put into other stats. This state will have 200+.
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd>-<b>Energy</b>: This should be kept at base. You will have plenty of mana later with your gear. Trust me!
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd>Now that I have given you what I can, it is time for you to make 
+your decision about how you want to go about it. Here is a breakdown of 
+what your stat points could look like, depending on what you decided 
+regarding Dexterity and Vitality.
+</dd>
+</dl>
+<p><br>
+</p>
+<center>
+<table>
+<tbody><tr>
+<th bgcolor="#7D0B0D" width="150">Stat
+</th>
+<th bgcolor="#7D0B0D" width="75">Suggested Point Distribution
+</th></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Strength
+</td>
+<td bgcolor="#2F0600">75-156
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Dexterity
+</td>
+<td bgcolor="#2F0600">25-200+
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Vitality
+</td>
+<td bgcolor="#2F0600">100+
+</td></tr>
+<tr align="center">
+<td bgcolor="#7D0B0D">Energy
+</td>
+<td bgcolor="#2F0600">35
+</td></tr></tbody></table>
+</center>
+<h2><span class="mw-headline" id="Gear_Allotment">Gear Allotment</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=8" title="Edit section: Gear Allotment" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=8" title="Edit section: Gear Allotment">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd>Now for the most important (and fun!) part of your build, the gear. I
+ will break down this section into two parts, Optimal Killing Gear and 
+MFing Gear. I would suggest that you plan out your end game gear before 
+you start your character so you can plan out your Strength and Dexterity
+ stat point distribution. I am not going to list every possible choice 
+in gear, but I will give you some of the more popular gear used for this
+ build. It is up to you what gear you want to use and how much you can 
+afford to get. Now let’s get started!
+</dd>
+</dl>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="Optimal_Killing_Gear">Optimal Killing Gear</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=9" title="Edit section: Optimal Killing Gear" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=9" title="Edit section: Optimal Killing Gear">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd>Like I said before, these are only suggestions and you can mix and 
+match as you please. These are also end game items and does not include 
+items you would use while you are leveling or substitutes until you 
+obtain these items.
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Helm</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Harlequin_Crest" title="Harlequin Crest" class="mw-redirect">Harlequin Crest</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Nightwing%27s_Veil" title="Nightwing's Veil" class="mw-redirect">Nightwing's Veil</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Crown_of_Ages" title="Crown of Ages" class="mw-redirect">Crown of Ages</a> (If you can satisfy the str req.)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Amulet</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Mara%27s_Kaleidoscope_%28Diablo_II%29" title="Mara's Kaleidoscope (Diablo II)" class="mw-redirect">Mara's Kaleidoscope</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Adjudication_%28Diablo_II%29" title="Tal Rasha's Adjudication (Diablo II)" class="mw-redirect">Tal Rasha's Adjudication</a>
+</li>
+<li>Solid Rare Amulet (Very hard to find/expensive)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Weapon</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/The_Oculus_%28Diablo_II%29" title="The Oculus (Diablo II)" class="mw-redirect">The Oculus</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Heart_of_the_Oak" title="Heart of the Oak" class="mw-redirect">Heart of the Oak</a> (Runeword: Ko+Vex+Pul+Thul)
+</li>
+<li>Possibly <a href="http://diablo.gamepedia.com/Death%27s_Fathom" title="Death's Fathom" class="mw-redirect">Death's Fathom</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Armor</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Chains_of_Honor" title="Chains of Honor" class="mw-redirect">Chains of Honor</a> (Runeword: Dol+Um+Ber+Ist)
+</li>
+<li><a href="http://diablo.gamepedia.com/Enigma" title="Enigma" class="mw-redirect">Enigma</a> (Runeword: Jah+Ith+Ber) (I would only use if need str)
+</li>
+<li>Possibly <a href="http://diablo.gamepedia.com/Arkaine%27s_Valor_%28Diablo_II%29" title="Arkaine's Valor (Diablo II)" class="mw-redirect">Arkaine's Valor</a> or <a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Guardianship_%28Diablo_II%29" title="Tal Rasha's Guardianship (Diablo II)" class="mw-redirect">Tal Rasha's Guardianship</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Shield</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Stormshield" title="Stormshield">Stormshield</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Sanctuary_%28Diablo_II_Rune_Word%29" title="Sanctuary (Diablo II Rune Word)">Sanctuary</a> (Runeword: Ko+Ko+Mal)
+</li>
+<li>Possibly <a href="http://diablo.gamepedia.com/Moser%27s_Blessed_Circle_%28Diablo_II%29" title="Moser's Blessed Circle (Diablo II)" class="mw-redirect">Moser's Blessed Circle</a> or <a href="http://diablo.gamepedia.com/Gerke%27s_Sanctuary" title="Gerke's Sanctuary" class="mw-redirect">Gerke's Sanctuary</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Gloves</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Frostburn" title="Frostburn" class="mw-redirect">Frostburn</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Magefist_%28Diablo_II%29" title="Magefist (Diablo II)" class="mw-redirect">Magefist</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Rings</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Stone_of_Jordan_%28Diablo_II%29" title="Stone of Jordan (Diablo II)" class="mw-redirect">Stone of Jordan</a> (Best available)
+</li>
+<li><a href="http://diablo.gamepedia.com/Raven_Frost" title="Raven Frost" class="mw-redirect">Raven Frost</a> and <a href="http://diablo.gamepedia.com/Dwarf_Star" title="Dwarf Star" class="mw-redirect">Dwarf Star</a> for absorbs if needed
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Belt</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Arachnid_Mesh" title="Arachnid Mesh" class="mw-redirect">Arachnid Mesh</a> (Top caster belt)
+</li>
+<li><a href="http://diablo.gamepedia.com/Verdungo%27s_Hearty_Cord" title="Verdungo's Hearty Cord" class="mw-redirect">Verdungo's Hearty Cord</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Boots</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Sandstorm_Trek" title="Sandstorm Trek" class="mw-redirect">Sandstorm Trek</a> (Ethereal if possible)
+</li>
+<li><a href="http://diablo.gamepedia.com/War_Traveler" title="War Traveler" class="mw-redirect">War Traveler</a>
+</li>
+<li>Rare set of boots (If you can find/buy)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<h3><span class="mw-headline" id="MFing_Gear">MFing Gear</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=10" title="Edit section: MFing Gear" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=10" title="Edit section: MFing Gear">edit source</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd>The gear listed under the first bullet point is my suggestion and is
+ what I use. This gear will give you a nice amount of MF without 
+sacrificing a lot of killing and living ability. Though, it is up to 
+you, as always, what gear you choose to use. GL!
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Helm</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Harlequin_Crest" title="Harlequin Crest" class="mw-redirect">Harlequin Crest</a> (with a Perfect Topaz)
+</li>
+<li><a href="http://diablo.gamepedia.com/Tarnhelm" title="Tarnhelm" class="mw-redirect">Tarnhelm</a> (with a Perfect Topaz)
+</li>
+<li>Rare MF helm
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Amulet</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Adjudication_%28Diablo_II%29" title="Tal Rasha's Adjudication (Diablo II)" class="mw-redirect">Tal Rasha's Adjudication</a> (3 piece MF boost)
+</li>
+<li>Solid Rare Amulet with MF attribute(Very hard to find/expensive)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Weapon</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/The_Oculus" title="The Oculus">The Oculus</a> (With an Ist if you can afford it)
+</li>
+<li><a href="http://diablo.gamepedia.com/Blade_of_Ali_Baba" title="Blade of Ali Baba" class="mw-redirect">Blade of Ali Baba</a> (With 2 Ists if you can afford
+</li>
+<li>6 Socketed Weapon with 6 Ists (Very price and sacrifice good mods)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Armor</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Guardianship_%28Diablo_II%29" title="Tal Rasha's Guardianship (Diablo II)" class="mw-redirect">Tal Rasha's Guardianship</a> (3 piece MF boost)
+</li>
+<li><a href="http://diablo.gamepedia.com/Skullder%27s_Ire" title="Skullder's Ire" class="mw-redirect">Skullder's Ire</a> (With Perfect Topaz or Ist)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Shield</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Rhyme" title="Rhyme" class="mw-redirect">Rhyme</a> (Runeword: Shael+Eth)
+</li>
+<li><a href="http://diablo.gamepedia.com/Splendor" title="Splendor" class="mw-redirect">Splendor</a> (Runeword: Eth+Lum)
+</li>
+<li>3 or 4 Socket shield with Ists
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Gloves</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Chance_Guards_%28Diablo_II%29" title="Chance Guards (Diablo II)" class="mw-redirect">Chance Guards</a>
+</li>
+<li>Rare MR gloves
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Rings</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Nagelring_%28Diablo_II%29" title="Nagelring (Diablo II)" class="mw-redirect">Nagelring</a>
+</li>
+<li>Rare MF Rings
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Belt</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Fine-Spun_Cloth_%28Diablo_II%29" title="Tal Rasha's Fine-Spun Cloth (Diablo II)" class="mw-redirect">Tal Rasha's Fine-Spun Cloth</a> (3 piece MF boost)
+</li>
+<li><a href="http://diablo.gamepedia.com/Goldwrap_%28Diablo_II%29" title="Goldwrap (Diablo II)" class="mw-redirect">Goldwrap</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Boots</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/War_Traveler" title="War Traveler" class="mw-redirect">War Traveler</a>
+</li>
+<li>Rare MF boots
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<h2><span class="mw-headline" id="Mercernary">Mercernary</span><span style="direction: ltr;" class="mw-editsection mw-editsection-expanded"><span class="mw-editsection-bracket">[</span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;veaction=edit&amp;section=11" title="Edit section: Mercernary" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-divider"> | </span><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;action=edit&amp;section=11" title="Edit section: Mercernary">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd>This is last section before you will be off to build your new MeteOrb <a href="http://diablo.gamepedia.com/Sorceress" title="Sorceress" class="mw-redirect">Sorceress</a>!
+ This will be short and to the point, and is only a suggestion. Since 
+you are a caster, you will need a solid tank to distract the monsters 
+while you obliterate them. The best mercenaries for this task are Act 2 
+and Act 5 mercenaries. Personally, Act 2 mercenaries are unsurpassed due
+ to the beneficial aura that comes with them.  For the purpose of this 
+guide, I would suggest that you get an Act 2 <a href="http://diablo.gamepedia.com/Nightmare_%28Difficulty%29" title="Nightmare (Difficulty)" class="mw-redirect">Nightmare (Difficulty)</a>
+ Defense mercenary because you will get the Holy Freeze aura that will 
+stop the hordes of monsters in their tracks! Now, for the gear your 
+mercenary will be equipped with (Ethereal items if possible):
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Helm</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Harlequin_Crest" title="Harlequin Crest" class="mw-redirect">Harlequin Crest</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Vampire_Gaze" title="Vampire Gaze" class="mw-redirect">Vampire Gaze</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Tal_Rasha%27s_Horadric_Crest_%28Diablo_II%29" title="Tal Rasha's Horadric Crest (Diablo II)" class="mw-redirect">Tal Rasha's Horadric Crest</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Crown_of_Thieves" title="Crown of Thieves" class="mw-redirect">Crown of Thieves</a>
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Weapon</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Tomb_Reaver" title="Tomb Reaver" class="mw-redirect">Tomb Reaver</a> (MF boost)
+</li>
+<li><a href="http://diablo.gamepedia.com/Breath_of_the_Dying" title="Breath of the Dying" class="mw-redirect">Breath of the Dying</a> (Runeword: Vex+Hel+El+Eld+Zod+Eth)
+</li>
+<li><a href="http://diablo.gamepedia.com/Doom" title="Doom" class="mw-redirect">Doom</a> (Runeword: Hel+Ohm+Um+Lo+Cham; Also, if you go with this, go with Act 2 <a href="http://diablo.gamepedia.com/Normal_%28Difficulty%29" title="Normal (Difficulty)" class="mw-redirect">Normal (Difficulty)</a> or <a href="http://diablo.gamepedia.com/Hell_%28Difficulty%29" title="Hell (Difficulty)" class="mw-redirect">Hell (Difficulty)</a> Defense Mercenary)
+</li>
+<li><a href="http://diablo.gamepedia.com/The_Reaper%27s_Toll" title="The Reaper's Toll" class="mw-redirect">The Reaper's Toll</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Bonehew" title="Bonehew" class="mw-redirect">Bonehew</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Insight" title="Insight" class="mw-redirect">Insight</a> (Runeword: Ral+Tir+Tal+Sol)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<dl>
+<dd><dl>
+<dd>-<b>Armor</b>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd><dl>
+<dd><dl>
+<dd><ul>
+<li><a href="http://diablo.gamepedia.com/Shaftstop" title="Shaftstop" class="mw-redirect">Shaftstop</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Duriel%27s_Shell" title="Duriel's Shell" class="mw-redirect">Duriel's Shell</a>
+</li>
+<li><a href="http://diablo.gamepedia.com/Stone" title="Stone" class="mw-redirect">Stone</a> (Runeword: Shael+Um+Pul+Lum)
+</li>
+<li><a href="http://diablo.gamepedia.com/Chains_of_Honor" title="Chains of Honor" class="mw-redirect">Chains of Honor</a> (Runeword: Dol+Um+Ber+Ist)
+</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><br>
+</p>
+<table class="navbox dftable" style="border: 1px solid #5E0C00; font-size: 90%; width: 100%; margin: auto;">
+
+<tbody><tr>
+<th class="header" colspan="3"> <a href="http://diablo.gamepedia.com/Sorceress_%28Diablo_II%29" title="Sorceress (Diablo II)">Sorceress</a> Builds
+</th></tr>
+
+<tr>
+<td colspan="3" style="text-align: center;"> <a href="http://diablo.gamepedia.com/Enchantress_by_Orange_Juice" title="Enchantress by Orange Juice">Enchantress by Orange Juice</a>&nbsp;• <a href="http://diablo.gamepedia.com/Fire_Wall_Sorceress_by_Kickin_It" title="Fire Wall Sorceress by Kickin It">Fire Wall Sorceress by Kickin It</a>&nbsp;• <a href="http://diablo.gamepedia.com/Frozen_Orb_Sorceress_by_DeathMars" title="Frozen Orb Sorceress by DeathMars">Frozen Orb Sorceress by DeathMars</a><br><a href="http://diablo.gamepedia.com/Energy_Shield_Lightning_Sorceress_by_Seth" title="Energy Shield Lightning Sorceress by Seth">Energy Shield Lightning Sorceress by Seth</a>&nbsp;• <strong class="selflink">MeteOrb Sorceress by Lethal Weapon</strong>
+</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.285 seconds
+Real time usage: 0.333 seconds
+Preprocessor visited node count: 531/1000000
+Preprocessor generated node count: 4702/1000000
+Post‐expand include size: 6360/2097152 bytes
+Template argument size: 1573/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+ExtLoops count: 0/100
+-->
+
+<!-- Saved in parser cache with key diablo_gamepedia:pcache:idhash:4111-0!*!0!!en!2!* and timestamp 20150920212212 and revision id 152475
+ -->
+</div>												<div class="printfooter">
+						Retrieved from "<a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;oldid=152475">http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;oldid=152475</a>"						</div>
+																		<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://diablo.gamepedia.com/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="http://diablo.gamepedia.com/Category:Sorceress_Builds" title="Category:Sorceress Builds">Sorceress Builds</a></li></ul></div></div>																		<div class="visualClear"></div>
+											<div id="tfb" class="htt"></div><div id="templatetfb" class="htt"></div></div>
+					<!-- /bodyContent -->
+				</div>
+				<!-- second ad placement -->
+								<div class="btflb">
+					<div id="cdm-zone-04"><div style="border: 0pt none;" id="google_ads_iframe_/58309977/gamepedia_1__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/58309977/gamepedia_1" id="google_ads_iframe_/58309977/gamepedia_1" frameborder="0" height="90" width="728"></iframe></div></div>				</div>
+								<!-- /second ad placement -->
+			</div>
+			<!-- /content -->
+			<div id="footer" role="contentinfo">
+									<ul id="footer-info">
+													<li id="footer-info-lastmod"> This page was last modified on <time itemprop="datePublished" datetime="2014-02-11T08:25">2 November 2014, at 08:25</time>.</li>
+													<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>
+ unless otherwise noted.  Diablo content and materials are trademarks 
+and copyrights of Blizzard or its licensors. All rights reserved.  This 
+site is a part of Curse, Inc. and is not affiliated with Blizzard.</li>
+											</ul>
+									<ul id="footer-places">
+													<li id="footer-places-privacy"><a href="http://diablo.gamepedia.com/Diablo_Wiki:Privacy_policy" title="Diablo Wiki:Privacy policy">Privacy policy</a></li>
+													<li id="footer-places-about"><a href="http://diablo.gamepedia.com/Diablo_Wiki:About" title="Diablo Wiki:About">About Diablo Wiki</a></li>
+													<li id="footer-places-disclaimer"><a href="http://diablo.gamepedia.com/Diablo_Wiki:General_disclaimer" title="Diablo Wiki:General disclaimer">Disclaimers</a></li>
+													<li id="footer-places-mobileview"><a href="http://diablo.gamepedia.com/index.php?title=MeteOrb_Sorceress_by_Lethal_Weapon&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+											</ul>
+													<ul id="footer-icons" class="noprint">
+						<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="MeteOrb_files/88x31.png" alt="CC BY-NC-SA 3.0" height="31" width="88"></a>
+						</li>
+						<li id="footer-poweredbyico">
+							<a href="http://www.mediawiki.org/"><img src="MeteOrb_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a>
+							<a href="http://help.gamepedia.com/What_is_Hydra"><img src="MeteOrb_files/poweredbyhydra.png" alt="Powered by Hydra" height="31" width="88"></a>
+							<a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="MeteOrb_files/smw_button.png" alt="Powered by Semantic MediaWiki" height="31" width="88"></a>
+						</li>
+					</ul>
+								<div style="clear:both"></div>
+			</div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.Social","ext.smw.tooltips","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.vector.collapsibleNav","mw.MwEmbedSupport.style"],null,true);
+}</script>
+<script src="MeteOrb_files/load_008.php"></script>
+<footer id="footer" role="complimentary">
+	<div class="footer-links">
+				<a href="http://www.gamepedia.com/" class="curse">Gamepedia powered by Curse</a>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/CurseGamepedia" class="fb">Facebook</a></li>
+			<li><a href="https://twitter.com/CurseGamepedia" class="tw">Twitter</a></li>
+			<li><a href="https://www.youtube.com/CurseGP" class="yt">Youtube</a></li>
+			<li><a href="http://www.curse.com/newsletter" class="nl">Newsletter</a></li>
+		</ul>
+					<ul class="you">
+									<li><a href="http://diablo.gamepedia.com/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon" id="login-link" class="sign-in">Sign In</a></li>
+									<li><a href="http://diablo.gamepedia.com/index.php?title=Special:UserLogin&amp;returnto=MeteOrb+Sorceress+by+Lethal+Weapon&amp;type=signup" class="register" id="register-link">Register</a></li>
+										<li><a href="http://www.curseinc.com/careers" class="careers">Careers</a></li>
+			<li><a href="http://support.curse.com/" class="help">Help</a></li>
+					</ul>
+			<ul class="more">
+					<li><a href="http://www.curseinc.com/" class="about">About Curse</a></li>
+			<li><a href="http://www.curseinc.com/audience" class="advertise">Advertise</a></li>
+			<li><a href="http://www.curse.com/terms" class="tos">Terms of Service</a></li>
+			<li><a href="http://www.curse.com/privacy" class="privacy-policy">Privacy Policy</a></li>
+		</ul>
+		<span class="copyright">Copyright 2005-2015, Curse Inc.</span>
+	</div>
+			<div class="ad-placement ad-main-med-rect-footer">
+			<div id="cdm-zone-03"><div style="border: 0pt none;" id="google_ads_iframe_/58309977/gamepedia_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/58309977/gamepedia_0" id="google_ads_iframe_/58309977/gamepedia_0" frameborder="0" height="250" width="300"></iframe></div><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom; visibility: hidden; display: none;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/58309977/gamepedia_0__hidden__" id="google_ads_iframe_/58309977/gamepedia_0__hidden__" frameborder="0" height="0" width="0"></iframe></div>		</div>
+	</footer>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(
+        ['_setAccount', 'UA-39967852-30'],
+        ['_setDomainName', 'gamepedia.com'],
+        ['_addIgnoredRef', 'gamepedia.com'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-1045810-22'],
+        ['b._setDomainName', 'gamepedia.com'],
+        ['b._addIgnoredRef', 'gamepedia.com'],
+        ['b._trackPageview'],
+        ['c._setAccount', 'UA-35871056-4'],
+        ['c._setDomainName', 'gamepedia.com'],
+        ['c._addIgnoredRef', 'gamepedia.com'],
+        ['c._trackPageview'],
+        ['d._setAccount', 'UA-1045810-17'],
+        ['d._setDomainName', 'gamepedia.com'],
+        ['d._addIgnoredRef', 'gamepedia.com'],
+        ['d._trackPageview']
+
+);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Begin Nielsen -->
+<script type="text/javascript">
+(function () {
+	var d = new Image(1, 1);
+	d.onerror = d.onload = function () {
+		d.onerror = d.onload = null;
+	};
+	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+<div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- End Nielsen -->
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":395});
+}</script>
+		<!-- Lotame -->
+<script src="MeteOrb_files/cc.js" id="LOTCC_3613"></script>
+<script>
+_cc3613.bcp();
+</script>
+<img src="MeteOrb_files/c3613.gif" height="1" width="1">
+<!-- End Lotame -->
+
+<!--Adblock Check--> 
+<script type="text/javascript" src="MeteOrb_files/BSAds3.js"></script> <script type="text/javascript"> jQuery(document).ready(checkAds()); function checkAds(){if (document.getElementById('adsense')!=undefined){document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Unblocked', 'false',,true]);</sc" + "ript>");}else{document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Blocked', 'true',,true]);</sc" + "ript>");}} </script><script>_gaq.push(['_trackEvent', 'Adblock', 'Blocked', 'true',,true]);</script>
+ <!--End Adblock Check-->
+<!-- Start PubMP -->
+<script type="text/javascript" src="MeteOrb_files/showad.htm"></script> 
+<!-- End PubMP -->
+
+<div id="cdm-zone-end"></div>			<script src="MeteOrb_files/anchor.js"></script>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75f4858b7a","applicationID":"1909498","transactionName":"YlVXbREHWksEUkVdCVsfYEsKSV1WAVRJGhZdQA==","queueTime":0,"applicationTime":462,"ttGuid":"","agentToken":"","atts":"ThJUG1kdSUU=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script>
+
+<img style="display: none;" src="MeteOrb_files/px.txt" id="pi1" height="1" width="1"><div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><script src="MeteOrb_files/bid.js"></script><script src="MeteOrb_files/beacon.htm"></script><iframe class="mkswfrkjxvvzsmhhqrmx" style="visibility: hidden; display: none;" src="MeteOrb_files/container.htm"></iframe><iframe style="border: 0px none; width: 0px; height: 0px; display: block;" src="MeteOrb_files/rtifr.htm" id="LOTCCFrameMon Sep 21 2015 11:57:43 GMT-0400 (Eastern Standard Time)"></iframe><div class="kxhead" data-id="J1oYKsK2" style="display:none !important;"><span class="kxtag kxinvisible" data-id="58321" data-alias="Krux Track Social"><script type="text/javascript">Krux('social.init');</script></span><span class="kxtag kxinvisible" data-id="58325" data-alias="DTC"><script>
+(function() {
+Krux('scrape', { "page_attr_keywords": {meta_name: "keywords"}} );
+
+// Using UrlPath attributes
+Krux('scrape', { "page_attr_url_path_1": {url_path: "1"}} );
+Krux('scrape', { "page_attr_url_path_2": {url_path: "2"}} );
+Krux('scrape', { "page_attr_url_path_3": {url_path: "3"}} );
+
+Krux('scrape', { "page_attr_host": {url_host: "3"}} );
+
+Krux('scrape', { "page_attr_domain": {url_domain: 2} });
+Krux('scrape', { "page_attr_khvu": {javascript: "khvu"}} );
+
+})();
+
+</script></span></div></body><iframe src="" style="display: none;"></iframe></html>

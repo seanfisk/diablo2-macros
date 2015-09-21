@@ -15,34 +15,50 @@ Diablo2_Init("Controls.json"
 	, LogPath)
 
 SteamOverlayOpenTabs() {
-	TabUrls := ["file:///C:/Users/Sean/games/d2/Javazon%20Build%20by%20lMarcusl.html"
-		, "file:///C:/Users/Sean/games/d2/MeteOrb%20Sorceress%20by%20Lethal%20Weapon.html"
-		, "https://docs.google.com/document/d/1kSOhKy2va5T77qo9MGpDfZIRiWX0Yd7S_ML5wO3Saz8/edit"
-		, "https://docs.google.com/document/d/1cd5toYNZCAPvMdCj2fFu32GnjWCkxGqHMdy7HzPcO5k/edit"
-		, "http://diablo.gamepedia.com/Horadric_Cube_Recipes_%28Diablo_II%29"
-		, "http://diablo.gamepedia.com/Rune_Words_%28Diablo_II%29"
-		, "C:\Users\Sean\src\personal\diablo2-macros\Log.txt"]
+	global LogPath
+
+	TabUrls := []
+	; Can't use brace on same line with this Loop
+	Loop, Files, Characters\*.html, F
+	{
+		TabUrls.Push("file:///" . A_LoopFileLongPath) ; Always yields absolute path
+	}
+	for _, WikiPage in ["Horadric_Cube_Recipes", "Rune_Words"] {
+		TabUrls.Push(Format("http://diablo.gamepedia.com/{}_%28Diablo_II%29", WikiPage))
+	}
+	for _, DocID in ["1kSOhKy2va5T77qo9MGpDfZIRiWX0Yd7S_ML5wO3Saz8"
+	, "1cd5toYNZCAPvMdCj2fFu32GnjWCkxGqHMdy7HzPcO5k"] {
+		TabUrls.Push(Format("https://docs.google.com/document/d/{}/edit", DocID))
+	}
+	TabUrls.Push("file:///" . LogPath)
+
 	; Place the mouse over the URL bar.
 	MouseGetPos, MouseX, MouseY
+
+	; Use SendEvent to enable delays.
+	SendMode, Event
+	OldDelay := A_KeyDelay
+
 	Suspend, On
-	for TabUrlIndex, TabUrl in TabUrls {
-		; Change the key press delay for this keystroke. This is crucial to getting this keystroke detected.
+	for _, TabUrl in TabUrls {
+		; Change the key press delay for keystrokes using SendEvent because
+		; the Steam overlay is laggy in detecting them. Without this, keys
+		; will be dropped.
 		SetKeyDelay, 0, 100
-		SendEvent, ^t
+		Send, ^t
 
-		; Set delays, which give the overlay time to react. 0 sets the smallest possible delay, which is different than no delay (set by -1).
-		; These only work for SendEvent, which we subsequently use.
-		SetKeyDelay, 0, 0
-
-		; Click in the approximate place for the default positioning of the right side of the URL bar.
+		; Click where the user had the mouse
 		Click, %MouseX%, %MouseY%
 		Sleep, 100
-
-		SendEvent, {Raw}%TabUrl%
-		Sleep, 10000
-		SendEvent, {Enter}
+		SetKeyDelay, 0, 1
+		SendRaw, %TabUrl%
+		Send, % "{Enter}"
+		Sleep, 100 ; Let the tab load a bit
 	}
 	Suspend, Off
+
+	; Set to original delay and default press duration of -1.
+	SetKeyDelay, %OldDelay%, -1
 }
 
 #IfWinActive ahk_class Diablo II
@@ -55,7 +71,8 @@ h::Diablo2_FillPotion()
 ; Assign overlay to Alt+F12. Ctrl+MiddleClick or ExtraButtonOne opens and closes it.
 ^MButton::
 XButton1::
-Diablo2_Send("!{F12}")
+; The Steam overlay does not respond well to SendInput.
+SendEvent, "!{F12}"
 return
 
 ^!w::SteamOverlayOpenTabs()

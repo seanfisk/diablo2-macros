@@ -8,9 +8,11 @@ SetWorkingDir %A_ScriptDir%
 ; Works great with Diablo II.
 SendMode, Input
 
-StringReplace, SkillsPath, A_ScriptName, .ahk, Skills.json
-StringReplace, LogPath, A_ScriptName, .ahk, Log.txt
-Diablo2_Init("Controls.json", SkillsPath, "FillPotion.json", LogPath)
+LogPath := Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.txt"))
+Diablo2_Init("Controls.json"
+	, StrReplace(A_ScriptName, ".ahk", "Skills.json")
+	, "FillPotion.json"
+	, LogPath)
 
 SteamOverlayOpenTabs() {
 	TabUrls := ["file:///C:/Users/Sean/games/d2/Javazon%20Build%20by%20lMarcusl.html"

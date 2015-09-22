@@ -12,7 +12,9 @@ LogPath := Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.t
 Diablo2_Init("Controls.json"
 	, StrReplace(A_ScriptName, ".ahk", "Skills.json")
 	, "FillPotion.json"
-	, LogPath)
+	, LogPath
+	; Enable voice alerts
+	, true)
 
 SteamOverlayOpenTabs() {
 	global LogPath

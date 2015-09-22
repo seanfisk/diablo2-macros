@@ -21,3 +21,12 @@ ShowItemsWithTelekinesis() {
 	Diablo2_Send(Format("{{}{} Up{}}", ShowItemsSendKey))
 	Diablo2_SkillActivate(OldSkill)
 }
+
+; One-off skills
+; 5 is Teleport, 13 is Town Portal
+for _, SkillNum in [5, 13] {
+	Key := Diablo2.Controls.Skills[SkillNum]
+	Function := Func("Diablo2_SkillOneOff").Bind(Key)
+	; Note: Overrides hotkey created Diablo2_Init
+	Hotkey, %Key%, %Function%
+}

@@ -16,6 +16,25 @@ Diablo2_Init("Controls.json"
 	; Enable voice alerts
 	, true)
 
+Hotkey, IfWinActive, % Diablo2.HotkeyCondition
+
+; Specify using Hotkey command instead of usual syntax so that
+; the files which include this can have their code run too.
+
+Hotkey, ^!a, Diablo2_ConfigureControls
+Hotkey, ^!b, Diablo2_FillPotionGenerateBitmaps
+Hotkey, ^!r, Diablo2_Reset
+Hotkey, h, Diablo2_FillPotion
+
+; Assign overlay to Alt+F12. Ctrl+MiddleClick or ExtraButtonOne opens and closes it.
+Hotkey, ^MButton, SteamOverlayToggle
+Hotkey, XButton1, SteamOverlayToggle
+SteamOverlayToggle() {
+	; The Steam overlay does not respond well to SendInput.
+	SendEvent, "!{F12}"
+}
+
+Hotkey, ^!w, SteamOverlayOpenTabs
 SteamOverlayOpenTabs() {
 	global LogPath
 
@@ -63,29 +82,32 @@ SteamOverlayOpenTabs() {
 	SetKeyDelay, %OldDelay%, -1
 }
 
-#IfWinActive ahk_class Diablo II
+; The game won't let me assign ` as a key. Just assign to F10 then
+; remap here.
+Hotkey, ``, SendBacktick
+SendBacktick() {
+	Send, ``
+}
 
-^!a::Diablo2_ConfigureControls()
-^!b::Diablo2_FillPotionGenerateBitmaps()
-^!r::Diablo2_Reset()
-h::Diablo2_FillPotion()
+Hotkey, {, FillPotionDecrement
+FillPotionDecrement() {
+	global Diablo2
+	--Diablo2.FillPotion.FullscreenPotionsPerScreenshot
+}
+Hotkey, }, FillPotionIncrement
+FillPotionIncrement() {
+		global Diablo2
+		++Diablo2.FillPotion.FullscreenPotionsPerScreenshot
+}
 
-; Assign overlay to Alt+F12. Ctrl+MiddleClick or ExtraButtonOne opens and closes it.
-^MButton::
-XButton1::
-; The Steam overlay does not respond well to SendInput.
-SendEvent, "!{F12}"
-return
+Hotkey, IfWinActive
 
-^!w::SteamOverlayOpenTabs()
-
-; The game won't let me assign ` as a key. Just assign to F10 then remap here.
-`::F10
-
-{::--Diablo2.FillPotion.FullscreenPotionsPerScreenshot
-}::++Diablo2.FillPotion.FullscreenPotionsPerScreenshot
-
-#IfWinActive
-
-^!s::Suspend
-^!x::ExitApp
+Hotkey, ^!s, SuspendMacros
+SuspendMacros() {
+	Suspend
+}
+Hotkey, ^!x, ExitMacros
+ExitMacros() {
+	Suspend, Permit
+	ExitApp
+}

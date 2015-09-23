@@ -102,12 +102,5 @@ FillPotionIncrement() {
 
 Hotkey, IfWinActive
 
-Hotkey, ^!s, SuspendMacros
-SuspendMacros() {
-	Suspend
-}
-Hotkey, ^!x, ExitMacros
-ExitMacros() {
-	Suspend, Permit
-	ExitApp
-}
+Hotkey, ^!s, Diablo2_Suspend
+Hotkey, ^!x, Diablo2_Exit

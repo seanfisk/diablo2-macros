@@ -18,6 +18,8 @@ Hotkey, IfWinActive, % Diablo2.HotkeyCondition
 ; Specify using Hotkey command instead of usual syntax so that
 ; the files which include this can have their code run too.
 
+Hotkey, RButton, Diablo2_RightClick
+
 Hotkey, ^!a, Diablo2_ConfigureControls
 Hotkey, ^!b, Diablo2_FillPotionGenerateBitmaps
 Hotkey, ^!r, Diablo2_Reset

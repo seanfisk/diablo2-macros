@@ -94,6 +94,13 @@ FillPotionIncrement() {
 		++Diablo2.FillPotion.FullscreenPotionsPerScreenshot
 }
 
+SetupMassItem() {
+	for Index, FuncName in ["SelectStart", "SelectEnd", "Drop", "MoveSingleCellItems"] {
+		Hotkey, F%Index%, Diablo2_MassItem%FuncName%
+	}
+}
+SetupMassItem()
+
 Hotkey, IfWinActive
 
 Hotkey, ^!s, Diablo2_Suspend

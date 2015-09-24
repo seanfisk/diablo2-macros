@@ -6,11 +6,10 @@ SetWorkingDir %A_ScriptDir%
 
 #Include <Diablo2>
 
-LogPath := Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.txt"))
 Diablo2_Init("Controls.json"
 	, StrReplace(A_ScriptName, ".ahk", "Skills.json")
 	, "FillPotion.json"
-	, LogPath
+	, Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.txt"))
 	; Enable voice alerts
 	, true)
 
@@ -33,7 +32,7 @@ SteamOverlayToggle() {
 
 Hotkey, ^!w, SteamOverlayOpenTabs
 SteamOverlayOpenTabs() {
-	global LogPath
+	global Diablo2
 
 	TabUrls := []
 	; Can't use brace on same line with this Loop
@@ -48,7 +47,7 @@ SteamOverlayOpenTabs() {
 	, "1cd5toYNZCAPvMdCj2fFu32GnjWCkxGqHMdy7HzPcO5k"] {
 		TabUrls.Push(Format("https://docs.google.com/document/d/{}/edit", DocID))
 	}
-	TabUrls.Push("file:///" . LogPath)
+	TabUrls.Push("file:///" . Diablo2.Log.Path)
 
 	; Place the mouse over the URL bar.
 	MouseGetPos, MouseX, MouseY

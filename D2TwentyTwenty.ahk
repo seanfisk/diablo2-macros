@@ -23,10 +23,14 @@ ShowItemsWithTelekinesis() {
 }
 
 ; One-off skills
-; Teleport, Static Field, Cloak of Shadows, Town Portal
-for _, SkillNum in [5, 9, 10, 13] {
-	Key := Diablo2.Controls.Skills[SkillNum]
-	Function := Func("Diablo2_SkillOneOff").Bind(Key)
-	; Note: Overrides hotkey created Diablo2_Init
-	Hotkey, %Key%, %Function%
+SetupOneOff() {
+	global Diablo2
+	; Teleport, Static Field, Cloak of Shadows, Town Portal
+	for _, SkillNum in [5, 9, 10, 13] {
+		Key := Diablo2.Controls.Skills[SkillNum]
+		Function := Func("Diablo2_SkillOneOff").Bind(Key)
+		; Note: Overrides hotkey created Diablo2_Init
+		Hotkey, %Key%, %Function%
+	}
 }
+SetupOneOff()

@@ -1,12 +1,10 @@
-; Recommended for performance and compatibility with future AutoHotkey releases.
-#NoEnv
 ; Replace an old instance of the macros with a new one.
 #SingleInstance Force
 ; Don't warn; libraries we include have too many errors :|
 ; Allow AutoHotkey to find the config files in this directory.
 SetWorkingDir %A_ScriptDir%
-; Works great with Diablo II.
-SendMode, Input
+
+#Include <Diablo2>
 
 LogPath := Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.txt"))
 Diablo2_Init("Controls.json"
@@ -30,8 +28,7 @@ Hotkey, h, Diablo2_FillPotion
 Hotkey, ^MButton, SteamOverlayToggle
 Hotkey, XButton1, SteamOverlayToggle
 SteamOverlayToggle() {
-	; The Steam overlay does not respond well to SendInput.
-	SendEvent, "!{F12}"
+	Diablo2_Send("!{F12}")
 }
 
 Hotkey, ^!w, SteamOverlayOpenTabs
@@ -56,37 +53,33 @@ SteamOverlayOpenTabs() {
 	; Place the mouse over the URL bar.
 	MouseGetPos, MouseX, MouseY
 
-	; Use SendEvent to enable delays.
-	SendMode, Event
-	OldDelay := A_KeyDelay
-
 	Suspend, On
 	for _, TabUrl in TabUrls {
-		; Change the key press delay for keystrokes using SendEvent because
-		; the Steam overlay is laggy in detecting them. Without this, keys
-		; will be dropped.
+		; Use SendEvent to enable delays. Change the key press delay for
+		; keystrokes using SendEvent because the Steam overlay is laggy in
+		; detecting them. Without this, keys will be dropped.
+		;
+		; This sets the key delay only for this thread, so we don't need
+		; to worry about setting it back.
 		SetKeyDelay, 0, 100
-		Send, ^t
+		SendEvent, ^t
 
 		; Click where the user had the mouse
 		Click, %MouseX%, %MouseY%
 		Sleep, 100
 		SetKeyDelay, 0, 1
-		SendRaw, %TabUrl%
-		Send, % "{Enter}"
+		SendEvent, {Raw}%TabUrl%
+		SendEvent, {Enter}
 		Sleep, 100 ; Let the tab load a bit
 	}
 	Suspend, Off
-
-	; Set to original delay and default press duration of -1.
-	SetKeyDelay, %OldDelay%, -1
 }
 
 ; The game won't let me assign ` as a key. Just assign to F10 then
 ; remap here.
 Hotkey, ``, SendBacktick
 SendBacktick() {
-	Send, ``
+	Diablo2_Send("``")
 }
 
 Hotkey, {, FillPotionDecrement

@@ -15,7 +15,7 @@ ShowItemsWithTelekinesis() {
 
 	Diablo2_Send(Format("{{}{} Down{}}", ShowItemsSendKey))
 	OldSkill := Diablo2_SkillGet()
-	Diablo2_SkillActivate("t")
+	Diablo2_SkillActivate("n")
 
 	KeyWait, %ThisHotkey%
 	Diablo2_Send(Format("{{}{} Up{}}", ShowItemsSendKey))
@@ -25,8 +25,8 @@ ShowItemsWithTelekinesis() {
 ; One-off skills
 SetupOneOff() {
 	global Diablo2
-	; Teleport, Static Field, Cloak of Shadows, Town Portal
-	for _, SkillNum in [5, 9, 10, 13] {
+	; Teleport, Shiver Armor, Static Field, Town Portal
+	for _, SkillNum in [5, 6, 8, 12] {
 		Key := Diablo2.Controls.Skills[SkillNum]
 		Function := Func("Diablo2_SkillOneOff").Bind(Key)
 		; Note: Overrides hotkey created Diablo2_Init

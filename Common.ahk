@@ -6,36 +6,40 @@ SetWorkingDir %A_ScriptDir%
 
 #Include <Diablo2>
 
-Diablo2_Init("Controls.json"
-	, StrReplace(A_ScriptName, ".ahk", "Skills.json")
-	, "FillPotion.json"
-	, Format("{}\{}", A_WorkingDir, StrReplace(A_ScriptName, ".ahk", "Log.txt"))
-	; Enable voice alerts
-	, true)
-
-Hotkey, IfWinActive, % Diablo2.HotkeyCondition
+Diablo2.Init("Controls.json"
+	, {Skills: StrReplace(A_ScriptName, ".ahk", "Skills.json")
+		, FillPotion: {Fullscreen: true}
+		, Log: {}
+		, Voice: {}
+		, MassItem: {}})
 
 ; Specify using Hotkey command instead of usual syntax so that
 ; the files which include this can have their code run too.
 
-Hotkey, RButton, Diablo2_RightClick
+Diablo2.AssignMultiple({"^!a": "Controls.AutoAssign"
+	, "^!b": "FillPotion.GenerateBitmaps"
+	, "^!r": "Reset"
+	, "^!t": "Status"
+	, "h": "FillPotion.Activate"
+	, "RButton": "RightClick"
+	, "F1": "MassItem.SelectStart"
+	, "F2": "MassItem.SelectEnd"
+	, "F3": "MassItem.Drop"
+	, "F4": "MassItem.MoveSingleCellItems"})
+Diablo2.AssignMultiple({"^!s": "Suspend"
+	, "^!x": "Exit"}, false)
 
-Hotkey, ^!a, Diablo2_ConfigureControls
-Hotkey, ^!b, Diablo2_FillPotionGenerateBitmaps
-Hotkey, ^!r, Diablo2_Reset
-Hotkey, h, Diablo2_FillPotion
+Hotkey, IfWinActive, % Diablo2.HotkeyCondition
 
 ; Assign overlay to Alt+F12. Ctrl+MiddleClick or ExtraButtonOne opens and closes it.
 Hotkey, ^MButton, SteamOverlayToggle
 Hotkey, XButton1, SteamOverlayToggle
 SteamOverlayToggle() {
-	Diablo2_Send("!{F12}")
+	Diablo2.Send("!{F12}")
 }
 
 Hotkey, ^!w, SteamOverlayOpenTabs
 SteamOverlayOpenTabs() {
-	global Diablo2
-
 	TabUrls := []
 	; Can't use brace on same line with this Loop
 	Loop, Files, Characters\*.html, F
@@ -80,28 +84,7 @@ SteamOverlayOpenTabs() {
 ; remap here.
 Hotkey, ``, SendBacktick
 SendBacktick() {
-	Diablo2_Send("``")
+	Diablo2.Send("``")
 }
-
-Hotkey, {, FillPotionDecrement
-FillPotionDecrement() {
-	global Diablo2
-	--Diablo2.FillPotion.FullscreenPotionsPerScreenshot
-}
-Hotkey, }, FillPotionIncrement
-FillPotionIncrement() {
-		global Diablo2
-		++Diablo2.FillPotion.FullscreenPotionsPerScreenshot
-}
-
-SetupMassItem() {
-	for Index, FuncName in ["SelectStart", "SelectEnd", "Drop", "MoveSingleCellItems"] {
-		Hotkey, F%Index%, Diablo2_MassItem%FuncName%
-	}
-}
-SetupMassItem()
 
 Hotkey, IfWinActive
-
-Hotkey, ^!s, Diablo2_Suspend
-Hotkey, ^!x, Diablo2_Exit

@@ -82,9 +82,9 @@ SteamOverlayOpenTabs() {
 
 ; The game won't let me assign ` as a key. Just assign to F10 then
 ; remap here.
-Hotkey, ``, SendBacktick
-SendBacktick() {
-	Diablo2.Send("``")
+Hotkey, ``, SendF10
+SendF10() {
+	Diablo2.Send("{F10}")
 }
 
 Hotkey, IfWinActive

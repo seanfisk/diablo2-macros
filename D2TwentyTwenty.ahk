@@ -25,9 +25,8 @@ SetupOneOff() {
 	; Teleport, Shiver Armor, Static Field, Town Portal
 	for _, SkillNum in [5, 6, 8, 12] {
 		Key := Diablo2.Controls.Skills[SkillNum]
-		Function := ObjBindMethod(Diablo2.Skills, "OneOff", Key)
 		; Note: Overrides hotkey created by Diablo2.Init
-		Hotkey, %Key%, %Function%
+		Diablo2.Assign(Key, {Function: "Skills.OneOff", Args: [Key]})
 	}
 }
 SetupOneOff()

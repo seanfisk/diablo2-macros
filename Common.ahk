@@ -33,8 +33,13 @@ Diablo2.Init("Controls.json"
 		, MassItem: {}
 		, Steam: {OverlayKey: "!{F12}", BrowserTabUrls: GetTabUrls()}})
 
-; Specify using Hotkey command instead of usual syntax so that
-; the files which include this can have their code run too.
+; Assign these first in case there's an error in the AssignMultiple later.
+Diablo2.AssignMultiple({"^!s": "Suspend"
+	, "^!x": "Exit"
+	; Launch the game (no Steam)
+	, "^!k": "LaunchGame"
+	; Launch the game through Steam
+	, "^!l": {Function: "Steam.LaunchGame", Args: ["steam://rungameid/15078221207973134336"]}}, false)
 
 Diablo2.AssignMultiple({"^!a": "Controls.AutoAssign"
 	, "^!b": "FillPotion.GenerateBitmaps"
@@ -51,10 +56,3 @@ Diablo2.AssignMultiple({"^!a": "Controls.AutoAssign"
 	, "XButton1": "Steam.OverlayToggle"
 	; The game won't let me assign ` as a key. Just assign to F10 then remap here.
 	, "``": {Function: "Send", Args: ["{F10}"]}})
-
-Diablo2.AssignMultiple({"^!s": "Suspend"
-	, "^!x": "Exit"
-	; Launch the game (no Steam)
-	, "^!k": "LaunchGame"
-	; Launch the game through Steam
-	, "^!l": {Function: "Steam.LaunchGame", Args: ["steam://rungameid/15078221207973134336"]}}, false)

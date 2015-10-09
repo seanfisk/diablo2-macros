@@ -106,10 +106,10 @@ _Telekinesis := new Telekinesis()
 
 ; One-off skills
 SetupOneOff() {
-	; Teleport, Frozen Armor, Static Field, Town Portal
-	for _, SkillNum in [5, 8, 10, 12] {
+	; Teleport, Static Field, Frozen Armor, Town Portal
+	for _, SkillNum in [5, 6, 8, 12] {
 		Key := Diablo2.Controls.Skills[SkillNum]
-		; Note: Overrides hotkey created by Diablo2.Init
+		; Note: Overrides hotkey created by Diablo2.Init()
 		Diablo2.Assign(Key, {Function: "Skills.OneOff", Args: [Key]})
 	}
 }

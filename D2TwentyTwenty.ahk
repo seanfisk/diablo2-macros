@@ -86,10 +86,10 @@ class Telekinesis extends Diablo2._EnabledFeature {
 				MouseMove, Coords[1], Coords[2] + 7
 				; Sleeping after moving but before clicking increases the chances of the macro successfully
 				; picking up the item, especially on the last item for some reason.
-				Sleep, 30
+				Sleep, 50
 				Click, Right
-				; 400 is pretty much the lower limit here for dependability.
-				Sleep, 400
+				; This will work most of the time at 400, but add a little just to ensure reliability.
+				Sleep, 450
 			}
 		}
 		finally {

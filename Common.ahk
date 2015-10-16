@@ -16,6 +16,9 @@ GetTabUrls() {
 	for _, WikiPage in ["Horadric_Cube_Recipes", "Rune_Words"] {
 		TabUrls.Push(Format("http://diablo.gamepedia.com/{}_%28Diablo_II%29", WikiPage))
 	}
+	for _, WikiPage in ["Horadric_Cube_Recipes", "Crafting_Recipes"] {
+		TabUrls.Push(Format("http://diablo2.diablowiki.net/{}", WikiPage))
+	}
 	for _, DocID in ["1kSOhKy2va5T77qo9MGpDfZIRiWX0Yd7S_ML5wO3Saz8"
 	, "1cd5toYNZCAPvMdCj2fFu32GnjWCkxGqHMdy7HzPcO5k"] {
 		TabUrls.Push(Format("https://docs.google.com/document/d/{}/edit", DocID))

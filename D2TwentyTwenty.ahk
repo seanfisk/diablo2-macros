@@ -89,7 +89,7 @@ class Telekinesis extends Diablo2._EnabledFeature {
 				Sleep, 50
 				Click, Right
 				; This will work most of the time at 400, but add a little just to ensure reliability.
-				Sleep, 450
+				Sleep, 500
 			}
 		}
 		finally {
